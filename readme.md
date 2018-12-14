@@ -12,7 +12,7 @@
 ## 安装部署项目
 1. 克隆项目
 
-   git clone https://github.com/forzamilan0607/smartpark-frontend.git
+   git clone https://github.com/forzamilan0607/ibms-frontend.git
 2. 安装依赖
 
    npm install -g cnpm --registry=https://registry.npm.taobao.org
