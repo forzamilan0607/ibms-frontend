@@ -424,14 +424,14 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus { box-shado
 }
 
 .stop_car_content {
-    height: 100px;
-    width: 100px;
-    font-size: 20px;
+    height: 60px;
+    width: 80px;
+    font-size: 15px;
     margin: 0 auto;
 }
 .stop_car_content span {
     display: block;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 /** 配置项相关的css **/
 .icon_config {

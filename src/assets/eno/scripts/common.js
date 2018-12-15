@@ -487,7 +487,7 @@ function drawPieChart () {
         // 字体系列
         fontFamily: 'sans-serif',
         // 字体大小
-        fontSize: 24
+        fontSize: 20
       }
     },
     tooltip: {
@@ -498,7 +498,7 @@ function drawPieChart () {
     legend: {
       //  orient: 'vertical',
       //  top: 'middle',
-      bottom: 10,
+      bottom: 8,
       left: 'center',
       data: ['设备总数', '在用总数', '维修总数'],
       backgroundColor: '#fff',
@@ -514,7 +514,7 @@ function drawPieChart () {
         //  字体系列
         fontFamily: 'sans-serif',
         //  字体大小
-        fontSize: 18
+        fontSize: 15
       }
     },
     series: [
@@ -526,7 +526,7 @@ function drawPieChart () {
         label: {
           normal: {
             textStyle: {
-              fontSize: 18,
+              fontSize: 15,
               color: '#1adfea'
             }
           }
@@ -555,7 +555,7 @@ function drawLineChart () {
   let myChart = echarts.init(document.getElementById('lineChart'))
   var app = {}
   let option = null
-  app.title = '信息园资源管理信息统计'
+  app.title = '信息园实时人流'
   option = {
     tooltip: {
       trigger: 'axis',
@@ -565,7 +565,7 @@ function drawLineChart () {
     },
     title: {
       left: 'center',
-      text: '信息园实时人流',
+      text: app.title,
       textStyle: {
         //  文字颜色
         color: '#ccc',
@@ -576,7 +576,7 @@ function drawLineChart () {
         // 字体系列
         fontFamily: 'sans-serif',
         // 字体大小
-        fontSize: 24
+        fontSize: 20
       }
     },
     xAxis: {

@@ -74,7 +74,7 @@
 
                 <p class="weather_info ft18"></p>
 
-                <p class="weather_temp ft_robotoB ft15"></p>
+                <p class="weather_temp ft_robotoB ft12"></p>
             </a>
         </div>
         <div class="date">
@@ -84,18 +84,18 @@
 
                 <p class="ft18" id="global_week">星期日</p>
 
-                <p class="ft_robotoB ft15" id="global_date">2018-12-09</p>
+                <p class="ft_robotoB ft12" id="global_date">2018-12-09</p>
 
             </div>
         </div>
     </div>
-    <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
+    <!-- <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
         <ul class="login_user_box">
 
 
             <li><a href="/portal/logout" class="last">退出管理</a></li>
         </ul>
-    </div>
+    </div> -->
 
     <!-- 引入用户管理的导航 -->
 
@@ -104,17 +104,16 @@
 
         <!--container start-->
         <div class="container">
-            <div class="span12 wrapper">
+            <div class="wrapper">
                 <!--left content-->
-                <div class="span3 w400 mt20 ml20">
+                <div class="span3 w20 mt20 ml20">
                     <div class="pubCon h930">
                         <div class="allSummary_box">
                             <div class="s_b_one">
                                 <!--<div class="s_b_one" onclick="showBasicInfoWindow()">-->
                             </div>
                             <div class="s_b_two pubCon_black">
-                                <h2 class="ft30 mb10 colfff" style="cursor: pointer"
-                                    id="buildingName">
+                                <h2 class="ft20 mb10 colfff" style="cursor: pointer" id="buildingName">
                                     中国电信湖南信息园
                                 </h2>
 
@@ -176,12 +175,12 @@
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft20 colfff">24.3</em>
+                                            <em class="ft12 colfff">24.3</em>
                                             <em>℃</em>
                                         </span>
                                                 <span class="ml5">
                                             <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft20 colfff">35.1</em>
+                                            <em class="ft12 colfff">35.1</em>
                                             <em>%</em>
                                         </span>
                                             </p>
@@ -189,7 +188,7 @@
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft20 colfff">717</em>
+                                            <em class="ft12 colfff">717</em>
                                             <em>ppm</em>
                                         </span>
                                             </p>
@@ -203,12 +202,12 @@
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft20 colfff">25.1</em>
+                                            <em class="ft12 colfff">25.1</em>
                                             <em>℃</em>
                                         </span>
                                                 <span class="ml5">
                                             <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft20 colfff">14.3</em>
+                                            <em class="ft12 colfff">14.3</em>
                                             <em>%</em>
                                         </span>
                                             </p>
@@ -216,7 +215,7 @@
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft20 colfff">170</em>
+                                            <em class="ft12 colfff">170</em>
                                             <em>ppm</em>
                                         </span>
                                             </p>
@@ -224,18 +223,18 @@
                                     </dl>
                                     <dl class="day_weather_detail">
                                         <dt>
-                                            <h3 style="font-size: 18px">通信机楼</h3>
+                                            <h3>通信机楼</h3>
                                         </dt>
                                         <dd>
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft20 colfff">5.1</em>
+                                            <em class="ft12 colfff">5.1</em>
                                             <em>℃</em>
                                         </span>
                                                 <span class="ml5">
                                             <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft20 colfff">44.9</em>
+                                            <em class="ft12 colfff">44.9</em>
                                             <em>%</em>
                                         </span>
                                             </p>
@@ -243,7 +242,7 @@
                                             <p>
                                         <span>
                                             <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft20 colfff">1250</em>
+                                            <em class="ft12 colfff">1250</em>
                                             <em>ppm</em>
                                         </span>
                                             </p>
@@ -255,7 +254,7 @@
                     </div>
                 </div>
                 <!--center content-->
-                <div class="span9 w1060 mt20 ml10">
+                <div class="span9 w56 mt20 ml10">
                     <div id="myCarousel" class="carousel slide">
                         <!-- 轮播（Carousel）指标 -->
                         <!-- <ol class="carousel-indicators" style="right: 500px;">
@@ -266,7 +265,7 @@
                         <!-- 轮播（Carousel）项目 -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="pubCon h480 ">
+                                <div class="pubCon h300">
                                     <div class="pubCon_black con_indexT">
                                         <div class="con_i_l">
                                             <!-- <div class="chartBbox"> -->
@@ -278,20 +277,20 @@
                                                 <dt id="c_totalEnergy_param_key1_name">昨日用电</dt>
                                                 <dd><span class="unit right pt5"
                                                           id="c_totalEnergy_param_key1_unit">kWh</span><strong
-                                                        class="ft40 left ml20 colfff" id="lastDayElec">850</strong></dd>
+                                                        class="ft20 left ml20 colfff" id="lastDayElec">850</strong></dd>
                                             </dl>
                                             <dl>
                                                 <dt id="c_totalEnergy_param_key2_name">本月累计用电</dt>
                                                 <dd><span class="unit right pt5"
                                                           id="c_totalEnergy_param_key2_unit">kWh</span><strong
-                                                        class="ft40 left ml20 colfff" id="currMonthElec">46,344</strong>
+                                                        class="ft20 left ml20 colfff" id="currMonthElec">46,344</strong>
                                                 </dd>
                                             </dl>
                                             <dl class="last">
                                                 <dt id="c_totalEnergy_param_key3_name">上月用电</dt>
                                                 <dd><span class="unit right pt5"
                                                           id="c_totalEnergy_param_key3_unit">kWh</span><strong
-                                                        class="ft40 left ml20 colfff">50,978</strong></dd>
+                                                        class="ft20 left ml20 colfff">50,978</strong></dd>
                                             </dl>
                                         </div>
                                     </div>
@@ -303,7 +302,7 @@
 
                                                 <p id="c_chart1_text">SCA&nbsp;&nbsp;&nbsp;</p>
 
-                                                <p><em class="ft22 colfff mr20">2,253</em>kWh</p>
+                                                <p><em class="ft16 colfff mr20">2,253</em>kWh</p>
                                             </li>
                                             <li>
                                                 <div id="bohPieChart" class="chartPic_energy_light"
@@ -311,7 +310,7 @@
 
                                                 <p id="c_chart2_text">BOH</p>
 
-                                                <p><em class="ft22 colfff mr20">31,780</em>kWh</p>
+                                                <p><em class="ft16 colfff mr20">31,780</em>kWh</p>
                                             </li>
                                             <li>
                                                 <div id="parkPieChart" class="chartPic_energy_device"
@@ -319,7 +318,7 @@
 
                                                 <p id="c_chart3_text">停车场</p>
 
-                                                <p><em class="ft22 colfff mr20">24,442</em>kWh</p>
+                                                <p><em class="ft16 colfff mr20">24,442</em>kWh</p>
                                             </li>
                                             <li>
                                                 <div id="coldPieChart" class="chartPic_energy_other"
@@ -327,7 +326,7 @@
 
                                                 <p id="c_chart4_text" class="ft22">冷站</p>
 
-                                                <p><em class="ft22 colfff mr20">38,119</em>kWh</p>
+                                                <p><em class="ft16 colfff mr20">38,119</em>kWh</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -498,7 +497,7 @@
                         </a> -->
                     </div>
                     <!-- 子系统运行状况 -->
-                    <div class="pubCon pubCon_black h420 mt30">
+                    <div class="pubCon pubCon_black h420 mt20">
                         <div class="index_tit">
                             <h2>子系统运行情况</h2>
 
@@ -601,17 +600,17 @@
                     </div>
                 </div>
                 <!--right content-->
-                <div class="span3 w400 mt20 ml10">
+                <div class="span3 w20 mt20 ml10">
                     <div class="pubCon h300">
-                        <div class="pubCon_black con_indexT280">
+                        <div class="pubCon_black con_indexT260">
                             <!--<div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>-->
                             <!-- <div class="chartBbox"> -->
                                 <div id="pieChart" style="height: 100%"></div>
                             <!-- </div> -->
                         </div>
                     </div>
-                    <div class="pubCon h300 mt30">
-                        <div class="pubCon_black con_indexT280">
+                    <div class="pubCon h300 mt20">
+                        <div class="pubCon_black con_indexT260">
                             <div class="index_stop_car">停车场实时车辆</div>
                             <div class="chartBbox">
                                 <div class="loading"></div>
@@ -622,8 +621,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pubCon h300 mt30">
-                        <div class="pubCon_black con_indexT280">
+                    <div class="pubCon h300 mt20">
+                        <div class="pubCon_black con_indexT260">
                             <!-- <div class="chartBbox"> -->
                                 <div id="lineChart" style="height: 100%"></div>
                             <!-- </div> -->
