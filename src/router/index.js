@@ -24,7 +24,7 @@ const globalRoutes = [
 // 主入口路由(需嵌套上左右整体布局)
 const mainRoutes = {
   path: '/',
-  component: _import('main'),
+  component: _import('common/home'),
   name: 'main',
   redirect: { name: 'home' },
   meta: { title: '主入口整体布局' },

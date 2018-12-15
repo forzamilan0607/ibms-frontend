@@ -1,15 +1,11 @@
 <template>
-  <!-- <div class="mod-home">
-    <div class="main_bg"></div>
-  </div> -->
   <div class="body">
-  <div class="navbar">
 
+  <div class="navbar">
 
     <h1 class="logo"></h1>
 
     <div class="yt_logo"></div>
-
 
     <div class="topnav">
         <ul>
@@ -60,10 +56,8 @@
             <li>
                 <a href="#" class="icon_top my_voltageManage" title="变电站"></a>
             </li>
-            <!-- 方便进入系统后，查询权限信息 -->
 
             <li></li>
-
 
         </ul>
     </div>
@@ -82,20 +76,13 @@
 
             <div class="date_info">
 
-                <p class="ft18" id="global_week">星期日</p>
+                <p class="ft15" id="global_week">星期日</p>
 
-                <p class="ft_robotoB ft12" id="global_date">2018-12-09</p>
+                <p class="ft_robotoB ft15" id="global_date">2018-12-09</p>
 
             </div>
         </div>
     </div>
-    <!-- <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
-        <ul class="login_user_box">
-
-
-            <li><a href="/portal/logout" class="last">退出管理</a></li>
-        </ul>
-    </div> -->
 
     <!-- 引入用户管理的导航 -->
 
@@ -114,7 +101,7 @@
                             </div>
                             <div class="s_b_two pubCon_black">
                                 <h2 class="ft20 mb10 colfff" style="cursor: pointer" id="buildingName">
-                                    中国电信湖南信息园
+                                    {{ buildingName }}
                                 </h2>
 
                                 <p id="buildingAddress">
@@ -605,7 +592,7 @@
                         <div class="pubCon_black con_indexT260">
                             <!--<div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>-->
                             <!-- <div class="chartBbox"> -->
-                                <div id="pieChart" style="height: 100%"></div>
+                                <div id="pieChart" style="width:100%; height: 100%"></div>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -646,14 +633,18 @@
 
 <script>
  import {drawBarChart,drawPieChart,drawLineChart,drawScaPieChart,drawBohPieChart,drawParkPieChart,drawColdPieChart} from '../../assets/eno/scripts/common.js'
+ import Vue from 'vue';
   export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      buildingName: ''
     }
   },
   mounted() {
+      console.log("sdfsssdfsdf")
+    this.getBuildInfo();
     this.drawBarChart();
     this.drawPieChart();
     this.drawLineChart();
@@ -663,6 +654,13 @@
     this.drawColdPieChart()
   },
   methods: {
+    getBuildInfo(){
+        debugger
+        var buildInfo = {}
+        buildInfo.buildingName = '中国电信湖南信息园';
+        console.log(buildInfo)
+        return buildInfo
+    },
     drawBarChart(){
         drawBarChart();
     },
