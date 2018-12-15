@@ -1,0 +1,465 @@
+.viewList,.viewList_language { float:left; height:30px; }
+.viewList li,.viewList_language li {
+    position:relative;
+    float:left;
+    height:30px;
+    background-color:#666;
+    margin-right:8px;
+    padding:0 9px;
+    font-size:16px;
+    color:#fff;
+    line-height:30px;
+    cursor:pointer;
+}
+.viewList li label {
+    float:left;
+    height:30px;
+    font-size:18px;
+    line-height:30px;
+}
+.changeColor { background-color:#fc605e !important; }
+.viewList li.changeColor i{ background-position:-411px -10px; }
+.viewList li i {
+    float:right;
+    width:16px;
+    height:16px;
+    background-position:-645px -48px;
+    margin:7px 0 7px 10px;
+}
+.viewList li i.icon-calendar { background-position:-368px -10px; }
+.viewList li.compare { background-color:transparent; }
+.download_btn {
+    float:right;
+}
+/**=============复选框样式=============**/
+input[type=checkbox].css-checkbox {
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+    display:inline-block;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position: 0 -220px;
+    padding-left:34px;
+    line-height:24px;
+    cursor:pointer;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -177px;
+}
+.label_w45 { width: 45px!important; }
+label.css-label {
+    background:url(~@/assets/eno/images/icon_small.png) no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:16px;
+    color:#fff;
+}
+
+input[type=checkbox].css-checkbox-small {
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+input[type=checkbox].css-checkbox-small + label.css-label-small {
+    display:inline-block;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position: -485px -220px;
+    padding-left:30px;
+    line-height:10px;
+    cursor:pointer;
+}
+input[type=checkbox].css-checkbox-small:checked + label.css-label-small {
+    background-position: -485px -180px;
+}
+label.css-label-small {
+    background:url(~@/assets/eno/images/icon_small.png) no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:18px;
+    color:#fff;
+}
+/**=============单选按钮样式=============**/
+input[type=radio].css-radio {
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+
+input[type=radio].css-radio + label.css-label-radio {
+    width:65px;
+    padding-left:30px;
+    height:30px;
+    display:inline-block;
+    line-height:30px;
+    background-repeat:no-repeat;
+    background-position: 0 -384px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+input[type=radio].css-radio:checked + label.css-label-radio {
+    background-position: 0 -344px;
+}
+label.css-label-radio {
+    background:url(~@/assets/eno/images/icon_small.png) no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    color: #fff;
+}
+/**=============下拉列表样式=============**/
+.filter_widget { float: left; }
+.dropdown-toggle { background-color: #000!important; }
+.bootstrap-select.btn-group,
+.bootstrap-select.btn-group[class*="span"]{
+    margin: 0;
+}
+.btn-group.open .btn.dropdown-toggle,
+.btn-group .btn.dropdown-toggle{
+    height: 30px;
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+    outline: none!important;
+}
+.btn-group.open .btn.dropdown-toggle { box-shadow:0 0 5px #000; }
+.btn-group>.btn:first-child,
+.dropdown-menu{
+    border-radius: 0;
+}
+.btn-group>.btn,
+.btn-group>.dropdown-menu,
+.btn-group>.popover,
+.input-append input {
+    font-size:16px !important;
+}
+.btn { box-shadow: none !important; }
+.caret { border-top: 4px solid #4dafc9 !important; }
+.dropdown-menu {
+    border:0;
+    background-color:#111 !important;
+    box-shadow:0 0 5px #000;
+    margin-top:1px;
+    padding:0 !important;
+}
+.dropdown-menu>li { border-bottom:#444 solid 1px; }
+.dropdown-menu>li:last-child, .btn { border:0 !important; }
+.dropdown-menu>li>a {
+    height:29px !important;
+    padding:0 15px !important;
+    color:#fff !important;
+    line-height:29px !important;
+}
+.dropdown-menu>li>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li.selected{
+    background-image:none;
+    background-color:#4dafc9;
+}
+/**=============日历样式=============**/
+.calendarBar {
+    float: left;
+    margin-left: 10px;
+}
+.calendarBar input {
+    width: 125px;
+    height: 20px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="text"],input[type="password"],textarea { border:0 !important; background-color:#000; border-radius:0; color: #fff; padding: 5px 6px; }
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus { box-shadow:none; }
+.input-append input { width: 100px; border-radius:0; }
+.input-append .add-on {
+    height:30px;
+    border:0;
+    background-color:#000;
+    padding:0 5px 0 0;
+}
+.input-append .add-on:last-child { border-radius:0;}
+.icon-calendar { background-position:-368px -10px; margin-top:6px; }
+.input-append { margin-bottom:0; }
+
+/**=============选项卡样式=============**/
+.nav-tabs>li>a {
+    border:0;
+    border-radius:0;
+}
+
+#loginBtn {
+    cursor: pointer;
+}
+
+
+/**=============quotaManage css=============**/
+.quota_content { width:1880px; margin:20px; }
+.quota_top_content { width:100%; height:535px; }
+.quota_bottom_content { height:400px; margin-top:20px; }
+.amount_num{
+    height:50px;
+    padding-left:30px;
+    color:#fff;
+    line-height:50px;
+}
+.year_count, .month_count, .day_count { float:left; }
+.year_count { width:465px; border-right:#444 solid 1px; }
+.month_count { width:948px; border-right:#444 solid 1px; }
+.day_count { width:465px; }
+.quota_dateBar { height:30px; padding:25px; }
+.quota_dateBar .formBar label {
+    float:left;
+    font-size:20px;
+    color:#fff;
+    line-height:25px;
+    cursor: default;
+}
+
+.chartPic_auotaOne { width:306px; margin:20px auto 0; }
+.quota_chartValue { margin-top:10px; text-align:center; line-height:30px; }
+
+.Echart_quota { height:330px;}
+.quota_viewBar { height:30px; padding:12px 15px; }
+.quota_viewBar .datetime { float:right; color:#fff; line-height:30px; }
+
+.chart_quota_detail ul { padding:25px 20px; }
+.chart_quota_detail ul li {
+    height:75px;
+    margin-bottom:10px;
+}
+.chart_quota_d_t { float:left; margin:10px 15px 0 0; color:#fff; }
+.chart_quota_d_i { float:left; }
+.chart_quota_detail ul li p { line-height:35px; }
+
+/**=============quotaManage 弹出框 配置定额 css=============**/
+.quota_setAll_list {
+    float: left;
+    margin: 5px 0 20px 20px;
+}
+.quota_setAll_list .quota_setInfo {
+    float: left;
+    height: 30px;
+    margin: 0 25px 15px 0;
+    line-height: 30px;
+}
+.quota_setAll_list .quota_setInfo label {
+    float: left;
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+.quota_setAll_listS .quota_setInfo label { width: 120px; }
+.quota_setAll_list_month .quota_setInfo label { width: 55px;}
+.quota_setAll_list .quota_setInfo .formInput {
+    float: left;
+    width: 130px;
+    background-color: #000;
+}
+.quota_setAll_list .quota_setInfo .calendarBar { margin: 0; }
+.quota_input {
+    float: left;
+    width: 80px;
+    margin: 0 5px 0 0!important;
+    padding-left: 10px;
+}
+.history_dataCon { height: 528px; border: #444 solid 1px; }
+.history_showhide { }
+/*.history_dataCon { padding: 0 20px; }*/
+.export_showBtn, .export_hideBtn {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat -255px -180px;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+.export_hideBtn { background-position: -255px -220px; }
+.quota_set_tab { float: left; width: 280px; margin: 0 20px; }
+.quota_set_tab table { width: 100%; color: #fff; text-align: left; }
+.quota_set_tab table th { font-weight: normal; padding-bottom: 15px; }
+.quota_set_tab table td { padding: 5px 0; }
+
+#attribute_value_form input {
+    background-color: #999 !important;
+}
+.stop_car {
+    background: url(~@/assets/eno/images/stop_car2_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.bgm {
+    background: url(~@/assets/eno/images/bgm_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.build {
+    background: url(~@/assets/eno/images/build_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.cold_hot {
+    background: url(~@/assets/eno/images/cold_hot_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.cold_hot_system {
+    background: url(~@/assets/eno/images/cold_hot_system_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.elevator {
+    background: url(~@/assets/eno/images/elevator_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.energy {
+    background: url(~@/assets/eno/images/elevator_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.fire {
+    background: url(~@/assets/eno/images/fire_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.group_control {
+    background: url(~@/assets/eno/images/group_ctrl_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.light {
+    background: url(~@/assets/eno/images/light_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.monitor {
+    background: url(~@/assets/eno/images/monitor_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.voltage {
+     background: url(~@/assets/eno/images/voltage_big.png);
+     background-size: 100% 100%;
+     -moz-background-size: 100% 100%
+ }
+
+.go_around {
+    background: url(~@/assets/eno/images/go_around_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.entrance {
+    background: url(~@/assets/eno/images/entrance_big.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%
+}
+
+.icon_big_eno {
+    float: left;
+    /*background: url(~@/assets/eno/images/icon_big.png") no-repeat;*/
+}
+.icon_small_eno {
+    float: left;
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat;
+}
+
+.loading {
+    margin: 0 auto;
+    width: 124px;
+    height: 124px;
+    background: url(~@/assets/eno/images/load/009.gif);
+}
+
+.stop_car_content {
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.stop_car_content span {
+    display: block;
+    margin-top: 25px;
+}
+/** 配置项相关的css **/
+.icon_config {
+    display: none;
+    width: 24px;
+    height: 24px;
+    background-position: -878px -258px;
+    cursor: pointer;
+    margin: 26px 0 0 14px;
+}
+
+/*====================kendoUI grid===================*/
+#costReportGrid,#selfReportGrid,#grid,#grid02,#grid03,#grid04 { border: 0; color: #fff; }
+
+.k-filter { background: url(~@/assets/eno/images/icon_small.png) no-repeat 0 -530px; }
+.k-grid-header { background: #000; }
+.k-grid-header .k-header>.k-link { color: #fff; }
+.k-header { background: #000; border-color: #999; color: #fff; }
+.k-grid td { height: 40px; line-height: 40px; padding: 0; border-color: #999; color: #fff; }
+.k-grid tr:nth-child(even) { background-color: #333; }
+.k-grid tr:nth-child(odd) { background-color: #666; }
+.k-pager-wrap { background: #262626; border: 0; color: #fff; line-height: 24px;  padding: 6px 0; }
+.k-pager-numbers li { line-height: 24px; }
+.k-pager-wrap > .k-link,.k-pager-numbers .k-link { min-width:24px; height: 24px; background-color: #333; border: 0; border-radius: 0; color: #fff; line-height: 24px; margin: 0 2px; }
+.k-pager-wrap .k-link,.k-state-disabled {}
+.k-pager-numbers .k-link { background-color: #666; }
+.k-pager-numbers .k-state-selected { min-width:24px; background: #FC605E; border: 0; border-radius: 0; }
+button { border: 0; }
+.tab_changeColor { background-color: rgba(115,220,255,0.5)!important; }
+
+#search .k-widget { background-color:#363940; }

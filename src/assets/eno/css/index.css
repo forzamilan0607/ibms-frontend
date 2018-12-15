@@ -1,0 +1,365 @@
+/**=============index css=============**/
+/*.allSummary_box{ border-top:#68d100 solid 8px; }*/
+.allSummary_box .s_b_one {
+    height:300px;
+    /*background-size: 400px 200px;*/
+    background:url(~@/assets/eno/images/index_pic01.jpg) no-repeat;
+}
+.allSummary_box .s_b_one p {
+    padding-right:18px;
+    color:#fff;
+    line-height:40px;
+    text-align:right;
+}
+.allSummary_box .s_b_two {
+    height:138px;
+    padding:20px 0 0 20px;
+}
+.allSummary_box .s_b_two p {
+    color:#9fa0a2;
+    line-height:33px;
+}
+.allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
+.allSummary_box .s_b_three {
+    height:480px;
+    padding:0 15px;
+}
+.day_weather {
+    border-bottom:#444 solid 1px;
+    padding: 30px 20px 20px 12px;
+    overflow:hidden;
+}
+.allSummary_box .day_w_t .w_s_range { font-family:"RobotoRegular"; }
+.allSummary_box .day_w_t .w_c_pic {
+    width:20px;
+    height:18px;
+    background-position:-319px -8px;
+}
+.allSummary_box .day_w_q {
+    height:60px;
+    border-left:#444 solid 1px;
+    padding-left:8px;
+}
+.day_weather_detail{
+    height:80px;
+    margin-top:10px;
+    background-color:#333;
+}
+.day_weather_detail dt, .day_weather_detail dd { float:left;}
+.day_weather_detail dt {
+    width:120px;
+    height:80px;
+    /*background-color:#101010;*/
+    margin-right:1px;
+}
+.day_weather_detail dd {
+    /* width:239px;
+    height:70px; */
+    /*background-color:#000;*/
+    padding:10px 0 0 10px;
+}
+.day_weather_detail dt h3 {
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    line-height:80px;
+}
+.day_weather_detail dd p {
+    height:30px;
+    line-height:30px;
+}
+.day_weather_detail dd p span { float:left; overflow:hidden; }
+.day_weather_detail dd p span:nth-child(odd){ width:130px;}
+.day_weather_detail dd p span:nth-child(even){ width:100px; }
+.icon_w_t, .icon_w_h, .icon_w_c {  float:left; width:30px; height:20px; margin-top:5px; }
+.icon_w_t { background-position:2px -8px; }
+.icon_w_h { background-position:-40px -8px; }
+.icon_w_c { background-position:-78px -8px; }
+
+/**=============index center content css=============**/
+.con_indexT280 { height:290px; overflow:hidden;}
+/*.con_indexT { height:370px; overflow:hidden;}*/
+.con_indexT { height:370px; overflow:hidden;}
+.con_indexB { height:110px;}
+.con_indexB140 { height:140px;}
+.con_i_l { float:left; width: 75%; height: 350px;}
+.con_i_r{
+    float:right;
+    width:24%;
+    height:350px;
+    margin:10px 0;
+    border-left:#444 solid 1px;
+}
+.con_i_r dl {
+    padding:15px 25px 5px;
+    border-bottom:#444 solid 1px;
+    overflow:hidden;
+}
+.con_i_r dl.last { border:none;}
+.con_i_r dl dt { font-size:20px; line-height:35px; }
+.con_i_r dl dd { line-height:55px;}
+
+.energy_use_status li { float:left; width:24%; border-left:#444 solid 1px;}
+.energy_use_status p { float:left; margin-top:24px; font-size:20px; }
+
+.chartPic_energy_havc,
+.chartPic_energy_light,
+.chartPic_energy_device,
+.chartPic_energy_other {
+    float:left;
+    width:110px;
+    height:110px;
+    /* margin:20px 10px 20px 10px; */
+    text-align:center;
+    line-height:70px;
+    /* position:relative; */
+}
+.chartPic_energy_havc span,
+.chartPic_energy_light span,
+.chartPic_energy_device span,
+.chartPic_energy_other span	{
+    display:block;
+    height:32px;
+    position:absolute;
+    top:19px;
+    left:13px;
+    line-height:32px;
+}
+
+.index_tit { overflow:hidden; }
+.index_tit h2 {
+    float:left;
+    font-size:24px;
+    color:#fff;
+    padding:20px 0 0 25px;
+}
+.index_stop_car{
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    font-size: 24px;
+    color: #fff;
+}
+.chartBbox {
+    clear: both;
+}
+.chartPic_indexOne { width:744px; margin:10px auto 0; }
+.chartPic_indexTwo { width:306px; margin:20px auto 0; }
+.chartPic_indexThree { width:365px; height:180px; margin:30px auto 0;}
+.chart_tit { font-size:18px; text-align:center; }
+.chartValue { margin-top:10px; text-align:center; line-height:40px; }
+.energy_detail { float:left; width:177px; margin-top:10px; }
+.energy_detail dt { line-height:35px; }
+.energy_detail dd { line-height:65px; }
+.energy_detail dd p { line-height:25px; }
+.carbonUnit {  font-size: 30px; }
+
+.legend { float:right; margin-right:20px; }
+.legend ul li {
+    float:left;
+    height:20px;
+    padding-top:40px;
+    margin-left:30px;
+    font-size:14px;
+    line-height:20px;
+}
+.legend ul li i { display:inline-block; width:10px; height:10px; }
+.legend .icon_index_on { background-color:#68d100; }
+.legend .icon_index_error { background-color:#fb0; }
+.legend .icon_index_off { background-color:#999; }
+.subSystem_run { padding-top:5px; clear:both; }
+.subSystem_run li {
+    float:left;
+    width:240px;
+    height:90px;
+    background-color:#333;
+    margin:20px 0 0 20px;
+}
+.subSystem_run ul li i { width:50px; height:50px; margin:17px 23px 13px 17px; }
+.subSystem_run ul li p { font-size:20px; line-height:40px; }
+.icon_index_hvac { background-position:0 -119px; }
+.icon_index_Plight { background-position:-83px -119px; }
+.icon_index_Nlight { background-position:-165px -119px; }
+.icon_index_hotsource { background-position:0px -497px; }
+.icon_index_elec { background-position:-248px -119px; }
+.icon_index_drainage { background-position:-330px -119px; }
+.icon_index_video { background-position:-413px -119px; }
+.icon_index_alarm { background-position:-495px -119px; }
+.icon_index_door { background-position:-577px -119px; }
+.icon_index_security { background-position:-660px -119px;}
+.icon_index_lift { background-position:-742px -119px; }
+.icon_index_fire { background-position:-825px -119px; }
+.icon_index_park { background-position:0 -200px; }
+.icon_index_music { background-position:-83px -497px; }
+.icon_index_ener { background-position:-158px -497px; }
+
+.subSystem_run p span { float:right; width:20px; height:20px; margin:11px 15px 0 0 }
+.alarm_green { background-position:-222px -8px;}
+.alarm_grey { background-position:-178px -8px;}
+.alarm_yellow { background-position:-134px -8px;}
+
+.energyquota {
+    width: 309px;
+    height: 169px;
+}
+.cartonchart {
+    width: 365px;
+    height: 180px;
+}
+
+#todayenergy {
+    width: 793px;
+    height: 266px;
+    margin-left: -25px;
+}
+
+.monthElectricity {
+    width: 940px;
+    height:280px;
+}
+
+/*模块配置弹框*/
+.w756 { width: 756px; }
+.w150 { width: 150px; }
+.setModule_tabNav li {
+    float: left;
+    margin-right: 20px;
+    padding: 13px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.setModule_tabNav li.cur {
+    background-color: rgba(0,0,0,.6);
+    border-top: #73DCFF solid 4px;
+    padding: 9px 20px 17px;
+}
+.setModule_tabCon {
+    float: left;
+    width: 716px;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px 20px 40px;
+    clear: both;
+    color: #fff;
+}
+.setModule_tabInfo { display: none; }
+.form-horizontal .control-group {
+    float: left;
+    width: 300px;
+    height: 30px;
+    margin: 30px 0 0 45px;
+}
+.form-horizontal .setM_label {
+    width: 108px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 30px;
+    padding: 0;
+}
+.control-Info {
+    float: left;
+    width: 190px;
+}
+.Input[type='text'] {
+    border: 0;
+    background-color: #000;
+    border-radius: 0;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 6px;
+}
+.Input[type='text']:focus {
+    border: #5AB3D7 solid 1px;
+    box-shadow: none;
+}
+.setModule_tabNav li {
+    float: left;
+    margin-right: 20px;
+    padding: 13px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+.setModule_tabNav li.cur {
+    background-color: rgba(0,0,0,.6);
+    border-top: #73DCFF solid 4px;
+    padding: 9px 20px 17px;
+}
+.setModule_tabCon {
+    float: left;
+    width: 716px;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px 20px 40px;
+    clear: both;
+    color: #fff;
+}
+.setModule_tabInfo { display: none; }
+.formBar { height: 30px; margin: 20px 0; }
+.formBar .setM_label { padding: 0; }
+.tableList .fixTitle td {
+    height: 40px;
+    background-color: #000;
+    border-right: #9fa0a2 solid 1px;
+    color: #9fa0a2;
+}
+.tableList .fixTitle td:last-child { border: 0; }
+.tab_con_scroll {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+.tableList .Input[type='text'] { margin: 5px 0; }
+/*下拉列表*/
+.filter_widget { float: left; }
+.filter_widget select { width: 190px; }
+.dropdown-toggle { background-color: #000!important; }
+.bootstrap-select.btn-group,
+.bootstrap-select.btn-group[class*="span"]{
+    margin: 0;
+}
+.btn-group.open .btn.dropdown-toggle,
+.btn-group .btn.dropdown-toggle{
+    height: 30px;
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+    outline: none!important;
+}
+.btn-group.open .btn.dropdown-toggle { box-shadow:0 0 5px #000; }
+.btn-group>.btn:first-child,
+.dropdown-menu{
+    border-radius: 0;
+}
+.btn-group>.btn,
+.btn-group>.dropdown-menu,
+.btn-group>.popover,
+.input-append input {
+    font-size:16px;
+}
+.btn { box-shadow: none; }
+.caret { border-top: 4px solid #4dafc9; }
+.dropdown-menu {
+    border:0;
+    background-color:#111;
+    box-shadow:0 0 5px #000;
+    margin-top:1px;
+    padding:0;
+}
+.dropdown-menu>li { border-bottom:#444 solid 1px; }
+.dropdown-menu>li:last-child, .btn { border:0; }
+.dropdown-menu>li>a {
+    height:29px;
+    padding:0 15px;
+    color:#fff;
+    line-height:29px;
+}
+.dropdown-menu>li>a:hover,
+.bootstrap-select.btn-group .dropdown-menu li.selected {
+    background-image:none;
+    background-color:#4dafc9;
+}
+.setPos {
+    position: absolute;
+}
