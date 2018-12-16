@@ -10,51 +10,59 @@
     <div class="topnav">
         <ul>
             <li>
-                <a href="#" class="icon_top my_stopCarManage" title="停车管理"></a>
+                <a href="#" class="icon_top icon_stop" title="停车管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotManage" title="冷热源管理"></a>
+                <a href="#" class="icon_top icon_cold_hot" title="冷热源管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_bgmManage" title="背景音乐"></a>
+                <a href="#" class="icon_top icon_bgm" title="背景音乐"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_buildManage" title="楼宇管理"></a>
+                <a href="#" class="icon_top icon_build" title="楼宇管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_elevatorManage" title="电梯管理"></a>
+                <a href="#" class="icon_top icon_elevator" title="电梯管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_fireManage" title="消防管理"></a>
+                <a href="#" class="icon_top icon_fire" title="消防管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_groupCtrlManage" title="操作群控"></a>
+                <a href="#" class="icon_top icon_group_control" title="操作群控"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_lightManage" title="照明管理"></a>
+                <a href="#" class="icon_top icon_light" title="照明管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_monitorManage" title="监控管理"></a>
+                <a href="#" class="icon_top icon_monitor" title="监控管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_energyManage" title="能耗查询"></a>
+                <a href="#" class="icon_top icon_energy" title="能耗查询"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotSystemManage" title="冷热源系统"></a>
+                <a href="#" class="icon_top icon_cold_hot_system" title="冷热源系统"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_voltageManage" title="变电站"></a>
+                <a href="#" class="icon_top icon_voltage" title="变电站"></a>
+            </li>
+
+            <li>
+                <a href="#" class="icon_top icon_device" title="资源管理"></a>
+            </li>
+
+            <li>
+                <a href="#" class="icon_top icon_system" title="系统管理"></a>
             </li>
 
             <li></li>
@@ -590,10 +598,11 @@
                 <div class="span3 w20 mt20 ml10">
                     <div class="pubCon h300">
                         <div class="pubCon_black con_indexT260">
-                            <!--<div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>-->
-                            <!-- <div class="chartBbox"> -->
-                                <div id="pieChart" style="width:100%; height: 100%"></div>
-                            <!-- </div> -->
+                            <div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>
+                            <div class="chartBbox">
+                                系统<div class="icon_monitor"></div>
+                                <!-- <div id="pieChart" style="width:100%; height: 100%"></div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="pubCon h300 mt20">

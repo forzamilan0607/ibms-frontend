@@ -1,4 +1,4 @@
-html { overflow: hidden;}
+html { font-size:16px;overflow: hidden;}
 html, body, span, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, dl, dt, dd, table, td, th, input, button, form, fieldset, legend, textarea, label, strong, img { margin:0; padding:0; }
 .body {width:100%; height:100%;font-family:"Microsoft Yahei"; font-size:12px; color:#1adfea; overflow: hidden; }
 table { border-collapse:collapse; }
@@ -173,10 +173,10 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
     overflow:hidden;
     margin:0;
 }
-.topnav{ float:left; height:81px;margin-left: 20px}
+.topnav{ float:left; height:81px;margin-left: 200px}
 .logo, .topnav ul li { float:left; height:81px;}
 .logo {
-    width: 200px;
+    width: 20px;
     font-size: 40px;
     color: #fff;
     line-height: 82px;
@@ -184,7 +184,7 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 }
 .topnav ul li a {
     float: left;
-    width: 60px;
+    width: 50px;
     height: 81px;
 }
 
@@ -539,7 +539,8 @@ select {
     width: 200px !important;
     height: 82px !important;
     background: url(~@/assets/eno/images/logo/left_logo.png) no-repeat;
-    margin-top: 10px;
+    margin: 10px 0 10px 20px;
+    background-size : 190px 60px;
 }
 
 .datebox {
