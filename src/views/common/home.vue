@@ -3,8 +3,6 @@
 
   <div class="navbar">
 
-    <h1 class="logo"></h1>
-
     <div class="yt_logo"></div>
 
     <div class="topnav">
@@ -91,6 +89,7 @@
             </div>
         </div>
     </div>
+  </div>
 
     <!-- 引入用户管理的导航 -->
 
@@ -104,22 +103,20 @@
                 <div class="span3 w20 mt20 ml20">
                     <div class="pubCon h930">
                         <div class="allSummary_box">
-                            <div class="s_b_one">
-                                <!--<div class="s_b_one" onclick="showBasicInfoWindow()">-->
-                            </div>
+                            <div class="s_b_one"></div>
                             <div class="s_b_two pubCon_black">
-                                <h2 class="ft20 mb10 colfff" style="cursor: pointer" id="buildingName">
-                                    {{ buildingName }}
+                                <h2 class="ft20 mb10 colfff" style="cursor: pointer" id="buildingName" title="中国电信湖南信息园">
+                                    中国电信湖南信息园
                                 </h2>
 
-                                <p id="buildingAddress">
-                                    长沙市万家丽中路
+                                <p id="buildingAddress" title="湖南省长沙市雨花区万家丽中路200号">
+                                    湖南省长沙市雨花区万家丽中路200号
                                 </p>
 
                                 <p>
                                     <span class="mr10">建筑面积：
-                                        <em id="buildingArea">
-                                            160000
+                                        <em id="buildingArea" title="160,000">
+                                            160,000
                                         </em>
                                         <span class="unit">㎡</span>
                                     </span>
@@ -135,7 +132,7 @@
                             <div class="s_b_three pubCon_black">
                                 <div class="day_weather">
                                     <div class="day_w_t left">
-                                        <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">--</strong><span
+                                        <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">5</strong><span
                                                 class="ml5">℃</span><span class="ml10 colfff">
                                     
                                     <i id="cuurent_weather_img" class="w_c_pic mr5"></i>
@@ -143,12 +140,12 @@
 
                                         <p class="w_s_range">
                                             <span class="ff"><i class="icon_small_eno arrow_up_y_eno"></i><em
-                                                    class="ml10 mr5" id="arrow_up_y">--</em>
-                                                <!--<span class="unit">℃</span>-->
+                                                    class="ml10 mr5" id="arrow_up_y">8</em>
+                                                <span class="unit">℃</span>
                                             </span>
                                             <span class="ff ml20"><i class="icon_small_eno arrow_down_y_eno"></i><em
-                                                    class="ml10 mr5" id="arrow_down_y">--</em>
-                                            <!--<span class="unit">℃</span>-->
+                                                    class="ml10 mr5" id="arrow_down_y">2</em>
+                                            <span class="unit">℃</span>
                                             </span>
                                         </p>
                                     </div>
@@ -156,7 +153,7 @@
                                           onclick="setLeftIndoorParam()"></span>
 
                                     <div class="day_w_q right">
-                                        <p class="mt10">湿度： <em id="current_rh_ra">--</em></p>
+                                        <p class="mt10">湿度： <em id="current_rh_ra">37.5</em></p>
 
 
                                     </div>
@@ -629,7 +626,6 @@
         </div>
 
     </div>
-</div>
   </div>
 </template>
 <style scoped>
@@ -647,12 +643,10 @@
   name: 'hello',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      buildingName: ''
+      
     }
   },
   mounted() {
-      console.log("sdfsssdfsdf")
     this.getBuildInfo();
     this.drawBarChart();
     this.drawPieChart();
@@ -664,7 +658,6 @@
   },
   methods: {
     getBuildInfo(){
-        debugger
         var buildInfo = {}
         buildInfo.buildingName = '中国电信湖南信息园';
         console.log(buildInfo)

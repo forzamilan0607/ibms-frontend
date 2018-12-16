@@ -28,10 +28,11 @@
 <script>
   fnResize()
   window.onresize = function () {
-  fnResize()
+    fnResize()
   }
   function fnResize() {
   var deviceWidth = document.documentElement.clientWidth || window.innerWidth
+  var deviceHeight = document.documentElement.clientHeight || window.innerHeight
   console.log(deviceWidth)
   if (deviceWidth >= 750) {
   deviceWidth = 750
@@ -39,6 +40,7 @@
   if (deviceWidth <= 320) {
   deviceWidth = 320
   }
-  document.documentElement.style.fontSize = (deviceWidth / 20) + 'px'
+  document.documentElement.style.fontSize = (deviceWidth / 24) + 'px'
+  this.deviceWidth = deviceWidth
   }
   </script>

@@ -2,8 +2,9 @@
 /*.allSummary_box{ border-top:#68d100 solid 8px; }*/
 .allSummary_box .s_b_one {
     height:300px;
-    /*background-size: 400px 200px;*/
     background:url(~@/assets/eno/images/index_pic01.jpg) no-repeat;
+    background-size: 400px 300px;
+    overflow: hidden;
 }
 .allSummary_box .s_b_one p {
     padding-right:18px;
@@ -16,8 +17,12 @@
     padding:10px 0 0 20px;
 }
 .allSummary_box .s_b_two p {
-    color:#9fa0a2;
+    color:#fff;
+    font-size:15px;
     line-height:20px;
+    white-space:nowrap;  
+    overflow:hidden; 
+    text-overflow:ellipsis;
 }
 .allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
 .allSummary_box .s_b_three {
@@ -36,9 +41,10 @@
     background-position:-319px -8px;
 }
 .allSummary_box .day_w_q {
-    height:60px;
+    height:90px;
     border-left:#444 solid 1px;
     padding-left:8px;
+    overflow: hidden;
 }
 .day_weather_detail{
     height:80px;
