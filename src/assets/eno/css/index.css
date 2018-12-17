@@ -2,9 +2,8 @@
 /*.allSummary_box{ border-top:#68d100 solid 8px; }*/
 .allSummary_box .s_b_one {
     height:300px;
+    /*background-size: 400px 200px;*/
     background:url(~@/assets/eno/images/index_pic01.jpg) no-repeat;
-    background-size: 400px 300px;
-    overflow: hidden;
 }
 .allSummary_box .s_b_one p {
     padding-right:18px;
@@ -13,16 +12,12 @@
     text-align:right;
 }
 .allSummary_box .s_b_two {
-    height:120px;
-    padding:10px 0 0 20px;
+    height:138px;
+    padding:20px 0 0 20px;
 }
 .allSummary_box .s_b_two p {
-    color:#fff;
-    font-size:15px;
-    line-height:20px;
-    white-space:nowrap;  
-    overflow:hidden; 
-    text-overflow:ellipsis;
+    color:#9fa0a2;
+    line-height:33px;
 }
 .allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
 .allSummary_box .s_b_three {
@@ -31,7 +26,7 @@
 }
 .day_weather {
     border-bottom:#444 solid 1px;
-    padding: 0px 20px 20px 12px;
+    padding: 30px 20px 20px 12px;
     overflow:hidden;
 }
 .allSummary_box .day_w_t .w_s_range { font-family:"RobotoRegular"; }
@@ -41,10 +36,9 @@
     background-position:-319px -8px;
 }
 .allSummary_box .day_w_q {
-    height:90px;
+    height:60px;
     border-left:#444 solid 1px;
     padding-left:8px;
-    overflow: hidden;
 }
 .day_weather_detail{
     height:80px;
@@ -53,16 +47,20 @@
 }
 .day_weather_detail dt, .day_weather_detail dd { float:left;}
 .day_weather_detail dt {
-    width:80px;
+    width:120px;
     height:80px;
+    /*background-color:#101010;*/
     margin-right:1px;
 }
 .day_weather_detail dd {
-    padding:10px 0 0 0px;
+    width:239px;
+    height:70px;
+    /*background-color:#000;*/
+    padding:10px 0 0 10px;
 }
 .day_weather_detail dt h3 {
-    color:#fff;
-    font-size:15px;
+    /*color:#fff;*/
+    font-size:20px;
     text-align:center;
     line-height:80px;
 }
@@ -71,7 +69,7 @@
     line-height:30px;
 }
 .day_weather_detail dd p span { float:left; overflow:hidden; }
-.day_weather_detail dd p span:nth-child(odd){ width:100px;}
+.day_weather_detail dd p span:nth-child(odd){ width:130px;}
 .day_weather_detail dd p span:nth-child(even){ width:100px; }
 .icon_w_t, .icon_w_h, .icon_w_c {  float:left; width:30px; height:20px; margin-top:5px; }
 .icon_w_t { background-position:2px -8px; }
@@ -79,31 +77,30 @@
 .icon_w_c { background-position:-78px -8px; }
 
 /**=============index center content css=============**/
-.con_indexT280 { height:280px; overflow:hidden;}
-.con_indexT260 { height:260px; overflow:hidden;}
+.con_indexT280 { height:290px; overflow:hidden;}
 /*.con_indexT { height:370px; overflow:hidden;}*/
-.con_indexT { height:300px; overflow:hidden;}
+.con_indexT { height:370px; overflow:hidden;}
 .con_indexB { height:110px;}
 .con_indexB140 { height:140px;}
-.con_i_l { float:left; width: 75%; height: 300px;}
+.con_i_l { float:left; width: 75%; }
 .con_i_r{
     float:right;
     width:24%;
-    height:300px;
+    height:350px;
     margin:10px 0;
     border-left:#444 solid 1px;
 }
 .con_i_r dl {
-    padding:10px 25px 5px;
+    padding:15px 25px 5px;
     border-bottom:#444 solid 1px;
     overflow:hidden;
 }
 .con_i_r dl.last { border:none;}
-.con_i_r dl dt { font-size:15px; line-height:25px; }
+.con_i_r dl dt { font-size:20px; line-height:35px; }
 .con_i_r dl dd { line-height:55px;}
 
 .energy_use_status li { float:left; width:24%; border-left:#444 solid 1px;}
-.energy_use_status p { float:left; margin-top:20px; font-size:15px; }
+.energy_use_status p { float:left; margin-top:24px; font-size:20px; }
 
 .chartPic_energy_havc,
 .chartPic_energy_light,
@@ -112,10 +109,8 @@
     float:left;
     width:110px;
     height:110px;
-    /* margin:20px 10px 20px 10px; */
     text-align:center;
     line-height:70px;
-    /* position:relative; */
 }
 .chartPic_energy_havc span,
 .chartPic_energy_light span,
@@ -137,12 +132,12 @@
     padding:20px 0 0 25px;
 }
 .index_stop_car{
-    width: 320px;
+    width: 400px;
     height: 40px;
     text-align: center;
     margin-top: 10px;
     float: left;
-    font-size: 20px;
+    font-size: 24px;
     color: #fff;
 }
 .chartBbox {
@@ -175,13 +170,13 @@
 .subSystem_run { padding-top:5px; clear:both; }
 .subSystem_run li {
     float:left;
-    width:200px;
-    height:80px;
+    width:240px;
+    height:90px;
     background-color:#333;
     margin:20px 0 0 20px;
 }
 .subSystem_run ul li i { width:50px; height:50px; margin:17px 23px 13px 17px; }
-.subSystem_run ul li p { font-size:15px; line-height:35px; }
+.subSystem_run ul li p { font-size:20px; line-height:40px; }
 .icon_index_hvac { background-position:0 -119px; }
 .icon_index_Plight { background-position:-83px -119px; }
 .icon_index_Nlight { background-position:-165px -119px; }
@@ -226,6 +221,7 @@
 /*模块配置弹框*/
 .w756 { width: 756px; }
 .w150 { width: 150px; }
+.setModule_tabNav {}
 .setModule_tabNav li {
     float: left;
     margin-right: 20px;
@@ -277,6 +273,7 @@
     border: #5AB3D7 solid 1px;
     box-shadow: none;
 }
+.setModule_tabNav {}
 .setModule_tabNav li {
     float: left;
     margin-right: 20px;

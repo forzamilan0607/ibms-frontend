@@ -1,12 +1,26 @@
-html { font-size:16px;overflow: hidden;}
+@font-face {
+    font-family: 'RobotoThin';
+    src: url(~@/assets/common/fonts/roboto-thin-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(~@/assets/common/fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { overflow: hidden;}
 html, body, span, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, dl, dt, dd, table, td, th, input, button, form, fieldset, legend, textarea, label, strong, img { margin:0; padding:0; }
-.body {width:100%; height:938px;font-family:"Microsoft Yahei"; font-size:12px; color:#1adfea; overflow: hidden; }
+body { width:100%; height:1080px; font-family:"Microsoft Yahei"; font-size:16px; color:#1adfea; overflow: hidden; }
 table { border-collapse:collapse; }
 select, input { vertical-align:middle; }
 input, button, select, textarea { font-family:"Microsoft Yahei"; }
 ul, li { list-style-type:none; }
 input,img { border:none; }
-h1,h2,h3,h4,h5,h6,dt,strong,b { font-style:normal; font-weight:normal;  white-space:nowrap;  overflow:hidden; text-overflow:ellipsis;}
+h1,h2,h3,h4,h5,h6,dt,strong,b { font-style:normal; font-weight:normal; }
 em,cite { font-style:normal;}
 .clearfix:after { display:block; content:".";  height:0; visibility:hidden; clear:both; }
 .clearfix { zoom:1; }
@@ -21,6 +35,8 @@ a:hover, a:active, a:focus { text-decoration:none; outline:none; color:#fff; }
 .bold { font-weight:bold; }
 em, .unit,.ft_robotoB { font-family:"RobotoRegular"; }
 strong { font-family:"RobotoThin"; font-weight: bold; }
+.icon_big { float:left; display:inline-block; background:url(~@/assets/eno/images/icon_big.png) no-repeat; }
+.icon_small { display:inline-block; background:url(~@/assets/eno/images/icon_small.png) no-repeat; }
 .flag { float:left; width:4px; height:24px; }
 .flag_h40 { float:left; width:4px; height:40px; }
 .flag_h60 { float:left; width:4px; height:60px; }
@@ -34,15 +50,15 @@ strong { font-family:"RobotoThin"; font-weight: bold; }
 .flag_purple_deep { background-color:#e599ff;}
 .flag_yellow { background-color:#f9ab35;}
 
-/**=============字体种类=============**/
+/**=============鐎涙ぞ缍嬬粔宥囪=============**/
 .ft_roboto { font-family:"RobotoThin";}
-/**=============字体颜色=============**/
+/**=============鐎涙ぞ缍嬫０婊嗗=============**/
 .col9fa0a2 { color:#9fa0a2; }
 .colfff { color:#fff; }
 .col6cf { color:#6cf; }
 .col646472 { color: #646472!important; }
 
-/**=============字体大小=============**/
+/**=============鐎涙ぞ缍嬫径褍鐨�============**/
 .ft60 { font-size:60px; }
 .ft50 { font-size:50px; }
 .ft45 { font-size:45px; }
@@ -57,8 +73,8 @@ strong { font-family:"RobotoThin"; font-weight: bold; }
 .ft16 { font-size:16px; }
 .ft15 { font-size:15px; }
 .ft14 { font-size:14px; }
-.ft12 { font-size:12px; }
 
+/**=============閹稿鎸虫０婊嗗=============**/
 .btn_pub{ display: inline-block; height: 30px; padding: 0 15px; font-size: 16px; color: #fff; line-height: 30px; letter-spacing: 2px; }
 .btn_pub:hover,.btn_pub:active { color:#fff; text-decoration:none;}
 input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; line-height:30px; letter-spacing:2px; }
@@ -75,7 +91,8 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .btn_green:hover { background-color: #59b200; }
 .funBtnBar { float:right; height:30px; margin:23px 14px 0 0; }
 .funBtnBar input[type="button"] { display:inline-block; /*margin-left:5px;*/}
-/**=============宽度大小=============**/
+
+/**=============鐎硅棄瀹虫径褍鐨�============**/
 .w1880 { width:1876px; }
 .w1455 { width:1451px; left: 24%; }
 .w1430 { width:1430px; }
@@ -95,9 +112,8 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .w369 { width:369px !important; }
 .w240 { width:240px !important; }
 .w185 { width:185px !important; }
-.w20 { width:20% !important;}
-.w56 { width:56% !important;}
-/**=============高度大小=============**/
+
+/**=============妤傛ê瀹虫径褍鐨�============**/
 .h930 { height:930px; }
 .h660 { height:660px; }
 .h560 { height:560px; }
@@ -116,7 +132,7 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .h120 { height:120px; }
 .h110 { height:110px; }
 
-/**=============内外边距=============**/
+/**=============閸愬懎顧囨潏纭呯獩=============**/
 .mt30 { margin-top:30px; }
 .mt25 { margin-top:25px; }
 .mt20 { margin-top:20px; }
@@ -155,38 +171,42 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 
 .navbar {
     width:100%;
-    height:9%;
+    height:81px;
+    /*border-bottom:#e6c475 solid 2px;*/
     background-color: #333;
     margin:0;
 }
 .container {
     width:100%;
-    height:10%;
+    height:996px;
     padding:0;
     clear:both;
     overflow: hidden;
 }
 .wrapper {
     width:100%;
-    height:10%;
+    height:996px;
     overflow:hidden;
     margin:0;
 }
-.topnav{ float:left; width:50%;height:81px;margin-left: 10%;overflow:hidden}
-.logo, .topnav ul li { float:left; height:81px;}
+.logo, .topnav, .topnav ul li { float:left; height:81px; }
 .logo {
-    width: 20px;
-    font-size: 40px;
-    color: #fff;
-    line-height: 82px;
-    text-align: center;
+    width:125px;
+    /*background:#e6c475;*/
+    font-size:40px;
+    color:#fff;
+    line-height:82px;
+    text-align:center;
+    margin: 0px !important;
+}
+.enologo {
+    margin: 0px !important;
 }
 .topnav ul li a {
-    float: left;
-    width: 50px;
-    height: 81px;
+    float:left;
+    width:82px;
+    height:82px;
 }
-
 .topnav ul li a.dashboard { background-position:26px 26px; }
 .topnav ul li a.runMonitor { background-position:-57px 26px; }
 .topnav ul li a.alarmManage { background-position:-139px 26px; }
@@ -196,6 +216,10 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .topnav ul li a.lowCarbon { background-position:-467px 26px; }
 .topnav ul li a.reportForm { background-position:-549px 26px; }
 .topnav ul li a.logManage { background-position:-835px 26px; }
+
+.topnav ul li a.userManage {
+    background: url(~@/assets/eno/images/icon_big.png) -466px 26px no-repeat;
+}
 
 .topnav ul li:hover { height:81px; background-color:#000; }
 .topnav ul li.current { width:225px; background-color:#000;}
@@ -258,15 +282,16 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 }
 /*.login_user_box li a:hover,*/
 /*.login_user_box li a.on{*/
-    /*background: #666 url(../../images/user_bg.png) no-repeat left center;*/
+    /*background: #666 url(../~@/assets/eno/imagesuser_bg.png) no-repeat left center;*/
     /*color: #fff;*/
 /*}*/
 .pubBox { float:left; }
 .pubBox:after { display:block; content:".";  height:0; visibility:hidden; clear:both;}
+.pubCon { }
 .pubCon_black {
     background-color:#000;
+    /*background-color:rgba(0,0,0,0.1);*/
     opacity:0.7;
-    overflow: hidden;
 }
 /*.pubCon_blackOne { background-color:#1b1c1f; }*/
 /*.pubCon_blackTwo { background-color:#363636; }*/
@@ -297,8 +322,9 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
     height:10px;
     background-position:-559px -51px !important;
 }
+.chartBbox {}
 
-/*顶部二级导航 */
+/**=============娑擄拷楠囨い鐢告桨鐎涙劕顕遍懜鐚糰b閸掑洦宕�============**/
 .js_subnav {
     width:1820px;
     height:80px;
@@ -351,8 +377,7 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 }
 .pub_title .to{ float: left; font-size:20px; padding:0 0 0 10px; line-height: 30px; }
 .pub_title .small_txt { float:left; margin:30px 0 0 50px; }
-
-
+/*鐞涖劍鐗搁弽宄扮础*/
 .tableBox { width:1830px; }
 .tableList { width:100%; }
 .tableList tr { height:40px; }
@@ -379,8 +404,7 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .tab_delete:hover { background-position: -47px -53px; }
 .tab_edit { background-position:-192px -152px; }
 .tab_edit:hover { background-position:-91px -53px; }
-
-
+/**=============閸掑棝銆夐弽宄扮础=============**/
 .pagination { margin:10px 0 0; }
 .pagination p { line-height:30px;float: right }
 .pagination ul>li:first-child>a, .pagination ul>li:first-child>span, .pagination ul>li:last-child>a, .pagination ul>li:last-child>span { border-radius:0; }
@@ -390,8 +414,7 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .pagination ul li a.pre_disabled { background-position:-458px -8px; }
 .pagination ul li a.next { background-position:-593px -8px; }
 .pagination ul li a.next_disabled { background-position:-503px -8px; }
-
-
+/**=============瀵懓鍤鍡樼壉瀵拷============**/
 .alert_box { background-color:#777; border-radius:0; border:0; border-left:#ff465a solid 4px; }
 .alert_box_header { height:60px; background-color:#535353; border:0; padding: 0 15px; }
 .alert_box_header h4 { font-size:40px; color:#fff; line-height:60px; }
@@ -406,11 +429,10 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .moduleBox_black { background-color:#303030; }
 .moduleBox_h200 { height:200px; }
 .moduleBox_h240 { height:240px; }
-
+.systemBox { }
 .systemBox:after{ display:block; content:".";  height:0; visibility:hidden; clear:both; }
 .systemBox h3 { float:left; font-size:20px; color:#fff; }
-
-
+/**=============閻劍鍩涚粻锛勬倞 瀵懓鍤鍡樼壉瀵拷============**/
 .user_manage {
     height: 505px;
 }
@@ -427,8 +449,13 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 .user_manage_new, .device_preve{
     padding: 45px;
 }
-
-
+.error_tip {
+    background:url(~@/assets/eno/images/icon_small.png) no-repeat -309px -252px;
+    margin-left: 120px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+/**=============閸ユ崘銆冭ぐ銏犵础閸掑洦宕查幐澶愭尦閺嶅嘲绱�============**/
 .tab_viewBtn {
     float:right;
     height:26px;
@@ -508,6 +535,7 @@ select {
     color: #fff;
     line-height: 30px;
     padding: 0 20px;
+    float: right;
     margin: 25px;
     background-color: #5ab3d7;
     left: 484px;
@@ -530,56 +558,4 @@ select {
 }
 .curText {
     cursor: text;
-}
-
-/**左上角logo**/
-.yt_logo {
-    float: left;
-    width: 200px !important;
-    height: 70px !important;
-    background: url(~@/assets/eno/images/logo/left_logo.png) no-repeat;
-    margin: 10px 0 0 20px;
-    background-size : 190px 60px;
-}
-
-.datebox {
-    width:375px;
-    height:82px;
-    border-left:#000 solid 0px;
-    padding-left:28px;
-    color:#9fa0a2;
-    overflow: hidden;
-}
-.datebox .weather_pic {
-    float: left;
-    width: 30px;
-    height: 52px;
-    background-position: -214px -90px;
-    margin: 40px 0 0 -25px;
-}
-.datebox .weather_detail, .datebox .date .date_info {
-    float:left;
-    width:75px;
-    margin-left:10px;
-    padding-top:20px;
-}
-.datebox .weather_detail, .datebox .date .time { font-family:"RobotoThin"; }
-.datebox .weather_detail p, .datebox .date .date_info { line-height:25px; }
-.datebox .date .time { float:left; height:65px; margin-top:10px; line-height:65px; }
-.datebox .date {
-    float:left;
-    font-size: 50px;
-    margin-left:10px;
-}
-.datebox .date .date_info {
-    float:left;
-    width:100px;
-    margin-left:10px;
-}
-.searchBox_a {
-    float: right;
-    width: 240px;
-    height: 31px;
-    border-bottom: #444 solid 1px;
-    margin: 25px 50px 25px 0;
 }

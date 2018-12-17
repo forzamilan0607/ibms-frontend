@@ -409,7 +409,7 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus { box-shado
 
 .icon_big_eno {
     float: left;
-    /*background: url(~@/assets/eno/images/icon_big.png") no-repeat;*/
+    /*background: url(~@/assets/eno/images/icon_big.png) no-repeat;*/
 }
 .icon_small_eno {
     float: left;
@@ -424,14 +424,14 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus { box-shado
 }
 
 .stop_car_content {
-    height: 60px;
-    width: 80px;
-    font-size: 15px;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
     margin: 0 auto;
 }
 .stop_car_content span {
     display: block;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 /** 配置项相关的css **/
 .icon_config {
