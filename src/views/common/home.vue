@@ -6,68 +6,83 @@
 
     <div class="topnav">
         <ul>
-            <li>
-                <a href="#" class="icon_top my_stopCarManage" title="停车管理"></a>
+           <li>
+                <a href="#" class="icon_top icon_stop" title="停车管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotManage" title="冷热源管理"></a>
+                <a href="#" class="icon_top icon_cold_hot" title="冷热源管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_bgmManage" title="背景音乐"></a>
+                <a href="#" class="icon_top icon_bgm" title="背景音乐"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_buildManage" title="楼宇管理"></a>
+                <a href="#" class="icon_top icon_build" title="楼宇管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_elevatorManage" title="电梯管理"></a>
+                <a href="#" class="icon_top icon_elevator" title="电梯管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_fireManage" title="消防管理"></a>
+                <a href="#" class="icon_top icon_fire" title="消防管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_groupCtrlManage" title="操作群控"></a>
+                <a href="#" class="icon_top icon_group_control" title="操作群控"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_lightManage" title="照明管理"></a>
+                <a href="#" class="icon_top icon_light" title="照明管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_monitorManage" title="监控管理"></a>
+                <a href="#" class="icon_top icon_monitor" title="监控管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_energyManage" title="能耗查询"></a>
+                <a href="#" class="icon_top icon_energy" title="能耗查询"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotSystemManage" title="冷热源系统"></a>
+                <a href="#" class="icon_top icon_cold_hot_system" title="冷热源系统"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_voltageManage" title="变电站"></a>
+                <a href="#" class="icon_top icon_voltage" title="变电站"></a>
+            </li>
+
+            <li>
+                <a href="#" class="icon_top icon_device" title="资源管理"></a>
+            </li>
+
+            <li>
+                <a href="#" class="icon_top icon_system" title="系统管理"></a>
             </li>
             <!-- 方便进入系统后，查询权限信息 -->
 
             <li></li>
         </ul>
     </div>
+    <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
+        <ul class="login_user_box">
+
+
+            <li><a href="/portal/logout" class="last">退出管理</a></li>
+        </ul>
+    </div>
     <div class="datebox">
         <span class="weather_pic"></span>
-        <div class="weather_detail">
+        <!-- <div class="weather_detail">
             <a href="javascript:void(0);" class="weatherbar curText">
 
                 <p class="weather_info ft18"></p>
 
                 <p class="weather_temp ft_robotoB ft15"></p>
             </a>
-        </div>
+        </div> -->
         <div class="date">
             <span class="time ft50" id="global_time">14:38</span>
 
@@ -81,13 +96,6 @@
         </div>
     </div>
 
-    <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
-        <ul class="login_user_box">
-
-
-            <li><a href="/portal/logout" class="last">退出管理</a></li>
-        </ul>
-    </div>
 
 <div class="span12 main  ng-scope" style="margin: 0px;" ng-app="portalApp">
     <!--container start-->
@@ -103,7 +111,7 @@
                         <div class="s_b_two pubCon_black">
                             <h2 class="ft30 mb10 colfff" style="cursor: pointer"
                                 id="buildingName">
-                                中国电信湖南信息园
+                            中国电信湖南信息园
                             </h2>
 
                             <p id="buildingAddress">
@@ -129,20 +137,21 @@
                         <div class="s_b_three pubCon_black">
                             <div class="day_weather">
                                 <div class="day_w_t left">
-                                    <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">--</strong><span
-                                            class="ml5">℃</span><span class="ml10 colfff">
-                        
-                        <i id="cuurent_weather_img" class="w_c_pic mr5"></i>
-                        <span class="weather_info"></span></span></p>
+                                    <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">17</strong>
+                                    <em><span class="ml5">℃</span></em>
+                                 <span class="ml10 colfff">
+                                    <i id="cuurent_weather_img" class="w_c_pic mr5"></i>
+                                    <span class="weather_info"></span>
+                                </span></p>
 
                                     <p class="w_s_range">
                                 <span class="ff"><i class="icon_small_eno arrow_up_y_eno"></i><em
-                                        class="ml10 mr5" id="arrow_up_y">--</em>
-                                    <!--<span class="unit">℃</span>-->
+                                        class="ml10 mr5" id="arrow_up_y">19</em>
+                                    <span class="unit">℃</span>
                                 </span>
                                         <span class="ff ml20"><i class="icon_small_eno arrow_down_y_eno"></i><em
-                                                class="ml10 mr5" id="arrow_down_y">--</em>
-                                            <!--<span class="unit">℃</span>-->
+                                                class="ml10 mr5" id="arrow_down_y">8</em>
+                                            <span class="unit">℃</span>
                                 </span>
                                     </p>
                                 </div>
@@ -150,7 +159,7 @@
                                       onclick="setLeftIndoorParam()"></span>
 
                                 <div class="day_w_q right">
-                                    <p class="mt10">湿度： <em id="current_rh_ra">--</em></p>
+                                    <p class="mt10">湿度： <em id="current_rh_ra">36.5</em></p>
 
 
                                 </div>
@@ -238,6 +247,7 @@
                                     </dd>
                                 </dl>
                             </div>
+                            <h2 style="text-align: center;">园区概况</h2>
                         </div>
                     </div>
                 </div>
@@ -257,9 +267,9 @@
                             <div class="pubCon h480 ">
                                 <div class="pubCon_black con_indexT">
                                     <div class="con_i_l">
-                                        <div class="chartBbox">
+                                        <!-- <div class="chartBbox"> -->
                                             <div id="container" style="height: 100%"></div>
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
                                     <div class="con_i_r">
                                         <dl>
@@ -289,15 +299,15 @@
                                             <div id="scaPieChart" class="chartPic_energy_havc"
                                                  style="height: 100%"></div>
 
-                                            <p id="c_chart1_text">SCA&nbsp;&nbsp;&nbsp;</p>
+                                            <p id="c_chart1_text">通信机楼&nbsp;&nbsp;&nbsp;</p>
 
-                                            <p><em class="ft22 colfff mr20">2,253</em>kWh</p>
+                                            <p><em class="ft22 colfff mr20">22,530</em>kWh</p>
                                         </li>
                                         <li>
                                             <div id="bohPieChart" class="chartPic_energy_light"
                                                  style="height: 100%"></div>
 
-                                            <p id="c_chart2_text">BOH</p>
+                                            <p id="c_chart2_text">调度大楼</p>
 
                                             <p><em class="ft22 colfff mr20">31,780</em>kWh</p>
                                         </li>
@@ -341,13 +351,13 @@
                 <!-- 子系统运行状况 -->
                 <div class="pubCon pubCon_black h420 mt30">
                     <div class="index_tit">
-                        <h2>子系统运行情况</h2>
+                        <h2>智能系统运行情况</h2>
 
                         <div class="legend">
                             <ul>
-                                <li><i class="icon_index_on mr10"></i>正常</li>
+                                <li><i class="icon_small_eno alarm_green mr10"></i>正常</li>
 
-                                <li><i class="icon_index_off mr10"></i>未连接</li>
+                                <li><i class="icon_small_eno alarm_grey mr10"></i>未连接</li>
                             </ul>
                         </div>
                     </div>
@@ -356,84 +366,84 @@
                             <li>
                                 <a href="#"><i class="icon_big_eno group_control"></i></a>
 
-                                <p class="mt5"><span class=" icon_small_eno alarm_green"></span>冷机群控</p>
+                                <p class="colfff">冷机群控<span class=" icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_HVAC">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno light"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>室外照明</p>
+                                <p class="colfff">室外照明<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_LSPUB">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno cold_hot_system"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_grey"></span>热源系统</p>
+                                <p class="colfff">热源系统<span class="icon_small_eno alarm_grey"></span></p>
 
                                 <p class="colfff" id="dashboard_LSN">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno voltage"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>变配电</p>
+                                <p class="colfff">变配电<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_ETD">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno build"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>楼宇自控</p>
+                                <p class="colfff">楼宇自控<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_WSDS">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno monitor"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>视频监控</p>
+                                <p class="colfff">视频监控<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_MSVDO">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno energy"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>能耗计量</p>
+                                <p class="colfff">能耗计量<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_SASSA">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno entrance"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_grey"></span>门禁管理</p>
+                                <p class="colfff">门禁管理<span class="icon_small_eno alarm_grey"></span></p>
 
                                 <p class="colfff" id="dashboard_SASAC">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno go_around"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>巡更管理</p>
+                                <p class="colfff">巡更管理<span class="icon_small_eno alarm_green"></span></p>
 
-                                <p class="colfff" id="dashboard_EP">暂无报警</p>
+                                <p class="colfff" style="color:yellow;" id="dashboard_EP">报警信息 (3)</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno elevator"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>电梯运行</p>
+                                <p class="colfff">电梯运行<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_MSEM">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno fire"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>消防监控</p>
+                                <p class="colfff">消防监控<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_FAS">暂无报警</p>
                             </li>
                             <li>
                                 <i class="icon_big_eno stop_car"></i>
 
-                                <p class="mt5"><span class="icon_small_eno alarm_green"></span>停车管理</p>
+                                <p class="colfff">停车管理<span class="icon_small_eno alarm_green"></span></p>
 
                                 <p class="colfff" id="dashboard_PARKM">暂无报警</p>
                             </li>
@@ -445,9 +455,23 @@
             <div class="span3 w400 mt20 ml10">
                 <div class="pubCon h300">
                     <div class="pubCon_black con_indexT280">
-                        <!--<div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>-->
+                        <div class="index_tit"><h2 id="energyModuleName">园区资源统计</h2></div>
                         <div class="chartBbox">
-                            <div id="pieChart" style="height: 100%"></div>
+                            <ul>
+                                <li>
+                                    <h3>监控</h3>
+                                    <div class="icon icon_monitor_red"></div>
+                                </li>
+                                <li>
+                                    <h3>门禁</h3>
+                                    <div class="icon_small_eno alarm_green"></div>
+                                </li>
+                                <li>
+                                    <h3>电梯</h3>
+                                    <div class="icon_small_eno alarm_green"></div>
+                                </li>
+                            </ul>
+                            <!-- <div id="pieChart" style="height: 100%"></div> -->
                         </div>
                     </div>
                 </div>
@@ -492,13 +516,12 @@
   name: 'hello',
   data() {
     return {
-      ssd : ''
     }
   },
   mounted() {
     this.getBuildInfo();
     this.drawBarChart();
-    this.drawPieChart();
+    // this.drawPieChart();
     this.drawLineChart();
     this.drawScaPieChart(),
     this.drawBohPieChart(),

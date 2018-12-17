@@ -348,7 +348,7 @@ function drawBarChart () {
   var myChart = echarts.init(dom)
   var app = {}
   let option = null
-  app.title = '信息园本月用电概况'
+  app.title = '园区用电概况'
   option = {
     title: {
       text: app.title,
@@ -360,7 +360,7 @@ function drawBarChart () {
         //  字体风格,'normal','italic','oblique'
         fontStyle: 'normal',
         //  字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-        fontWeight: 'bold',
+        fontWeight: 'normal',
         //  字体系列
         fontFamily: 'sans-serif',
         //  字体大小
@@ -370,7 +370,7 @@ function drawBarChart () {
     backgroundColor: '#080f15',
     xAxis: [{
       type: 'category',
-      data: ['12-01', '12-02', '12-03', '12-04', '12-05', '12-06', '12-07', '12-08', '12-09', '12-10', '12-11', '12-12', '12-13', '12-14', '12-15', '12-16', '12-17', '12-18', '12-19', '12-20', '12-21', '12-22', '12-23', '12-24', '12-25', '12-26', '12-27', '12-28', '12-29', '12-30'],
+      data: ['12-01', '12-02', '12-03', '12-04', '12-05', '12-06', '12-07'],
       axisTick: {
         alignWithLabel: true
       },
@@ -459,7 +459,7 @@ function drawBarChart () {
         }
       },
       //  barWidth: 7,
-      data: [10, 52, 200, 334, 390, 330, 220]
+      data: [400, 52, 200, 334, 390, 330, 860]
     }
   }
   if (option && typeof option === 'object') {
@@ -640,7 +640,7 @@ function drawScaPieChart () {
   let option = null
   option = {
     title: {
-      text: '10%',
+      text: '48%',
       x: 'center',
       y: 'center',
       textStyle:
@@ -667,7 +667,7 @@ function drawScaPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 10,
+        value: 48,
         itemStyle: {
           normal: {
             color: '#EB5D8E', //  100% 处的颜色,
@@ -680,7 +680,7 @@ function drawScaPieChart () {
           }
         }
       }, {
-        value: 90,
+        value: 52,
         itemStyle: {
           normal: {
             color: '#536882', //  100% 处的颜色,
@@ -707,7 +707,7 @@ function drawBohPieChart () {
   let option = null
   option = {
     title: {
-      text: '5%',
+      text: '36%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -734,7 +734,7 @@ function drawBohPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 5,
+        value: 36,
         itemStyle: {
           normal: {
             color: '#48B3F9', //  100% 处的颜色,
@@ -747,7 +747,7 @@ function drawBohPieChart () {
           }
         }
       }, {
-        value: 95,
+        value: 64,
         itemStyle: {
           normal: {
             color: '#536882', //  100% 处的颜色,
@@ -774,7 +774,7 @@ function drawParkPieChart () {
   let option = null
   option = {
     title: {
-      text: '13%',
+      text: '6%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -801,7 +801,7 @@ function drawParkPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 13,
+        value: 6,
         itemStyle: {
           normal: {
             color: '#EAC120', // 100% 处的颜色,
@@ -814,7 +814,7 @@ function drawParkPieChart () {
           }
         }
       }, {
-        value: 87,
+        value: 94,
         itemStyle: {
           normal: {
             color: '#536882', // 100% 处的颜色,
@@ -841,7 +841,7 @@ function drawColdPieChart () {
   let option = null
   option = {
     title: {
-      text: '16%',
+      text: '10%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -868,7 +868,7 @@ function drawColdPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 16,
+        value: 10,
         itemStyle: {
           normal: {
             color: '#3AF22C', // 100% 处的颜色,
@@ -881,7 +881,7 @@ function drawColdPieChart () {
           }
         }
       }, {
-        value: 84,
+        value: 90,
         itemStyle: {
           normal: {
             color: '#536882', // 100% 处的颜色,

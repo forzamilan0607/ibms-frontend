@@ -31,7 +31,7 @@ input:focus { outline: none;}
 .center { text-align:center; }
 .bold { font-weight:bold; }
 
-em, .unit,.ft_robotoB { font-family:"RobotoRegular"; }
+em,.unit,.ft_robotoB { font-family:"RobotoRegular"; color: #1adfea}
 strong { font-family:"RobotoThin"; font-weight: bold; }
 .icon_big { float:left; display:inline-block; background:url(~@/assets/eno/images/icon_big.png) no-repeat; }
 .topnav ul li a.runPlan {
@@ -168,7 +168,13 @@ input[disabled].btn_red { background-color: #ffa0a5; }
     overflow:hidden;
     margin:0;
 }
-.topnav{ float:left; height:81px;margin-left: 5%}
+.topnav{ 
+    float:left; 
+    width: 60%;
+    height:81px;
+    margin-left: 5%;
+    overflow: hidden;
+}
 .logo, .topnav ul li { float:left; height:81px;}
 .logo {
     width: 200px;
@@ -209,11 +215,12 @@ input[disabled].btn_red { background-color: #ffa0a5; }
 .topnav ul li:hover a.RuleManage, .topnav ul li.current a.RuleManage { background-position:-746px -442px; }
 .topnav ul li:hover a.runPlan, .topnav ul li.current a.runPlan { background-position:-835px -445px; }
 .login_user {
-    float: right;
+    float: left;
     height: 82px;
-    margin-right: 20px;
+    width: 7%;
+    /* margin-right: 20px; */
     line-height: 82px;
-    position: relative;
+    /* position: relative; */
 }
 .login_user a {
     position: relative;
@@ -271,11 +278,11 @@ input[disabled].btn_red { background-color: #ffa0a5; }
 }
 
 .datebox {
-    float:right;
-    width:375px;
+    float:left;
+    width:14%;
     height:82px;
-    border-left:#000 solid 0px;
-    padding-left:28px;
+    /* border-left:#000 solid 0px;
+    padding-left:28px; */
     color:#9fa0a2;
 }
 .datebox .weather_pic {

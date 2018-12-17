@@ -12,7 +12,7 @@
     text-align:right;
 }
 .allSummary_box .s_b_two {
-    height:138px;
+    height:10%;
     padding:20px 0 0 20px;
 }
 .allSummary_box .s_b_two p {
@@ -53,13 +53,13 @@
     margin-right:1px;
 }
 .day_weather_detail dd {
-    width:239px;
+    /* width:239px; */
     height:70px;
     /*background-color:#000;*/
     padding:10px 0 0 10px;
 }
 .day_weather_detail dt h3 {
-    /*color:#fff;*/
+    color:#fff;
     font-size:20px;
     text-align:center;
     line-height:80px;
@@ -71,7 +71,7 @@
 .day_weather_detail dd p span { float:left; overflow:hidden; }
 .day_weather_detail dd p span:nth-child(odd){ width:130px;}
 .day_weather_detail dd p span:nth-child(even){ width:100px; }
-.icon_w_t, .icon_w_h, .icon_w_c {  float:left; width:30px; height:20px; margin-top:5px; }
+.icon_w_t, .icon_w_h, .icon_w_c {  float:left; width:35px; height:20px; margin-top:5px; }
 .icon_w_t { background-position:2px -8px; }
 .icon_w_h { background-position:-40px -8px; }
 .icon_w_c { background-position:-78px -8px; }
@@ -82,7 +82,7 @@
 .con_indexT { height:370px; overflow:hidden;}
 .con_indexB { height:110px;}
 .con_indexB140 { height:140px;}
-.con_i_l { float:left; width: 75%; }
+.con_i_l { float:left; width: 75%; height: 100%; }
 .con_i_r{
     float:right;
     width:24%;
@@ -124,12 +124,13 @@
     line-height:32px;
 }
 
-.index_tit { overflow:hidden; }
+.index_tit {}
 .index_tit h2 {
     float:left;
     font-size:24px;
     color:#fff;
-    padding:20px 0 0 25px;
+    width: 100%;
+    text-align: center;
 }
 .index_stop_car{
     width: 400px;
@@ -158,16 +159,15 @@
 .legend ul li {
     float:left;
     height:20px;
-    padding-top:40px;
     margin-left:30px;
     font-size:14px;
     line-height:20px;
 }
-.legend ul li i { display:inline-block; width:10px; height:10px; }
+.legend ul li i { display:inline-block; width:30px; height:20px; }
 .legend .icon_index_on { background-color:#68d100; }
 .legend .icon_index_error { background-color:#fb0; }
 .legend .icon_index_off { background-color:#999; }
-.subSystem_run { padding-top:5px; clear:both; }
+.subSystem_run { clear:both; }
 .subSystem_run li {
     float:left;
     width:240px;
@@ -176,7 +176,13 @@
     margin:20px 0 0 20px;
 }
 .subSystem_run ul li i { width:50px; height:50px; margin:17px 23px 13px 17px; }
-.subSystem_run ul li p { font-size:20px; line-height:40px; }
+.subSystem_run ul li p { 
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-top: 3px;
+    width: 200px;
+}
 .icon_index_hvac { background-position:0 -119px; }
 .icon_index_Plight { background-position:-83px -119px; }
 .icon_index_Nlight { background-position:-165px -119px; }
@@ -193,7 +199,7 @@
 .icon_index_music { background-position:-83px -497px; }
 .icon_index_ener { background-position:-158px -497px; }
 
-.subSystem_run p span { float:right; width:20px; height:20px; margin:11px 15px 0 0 }
+.subSystem_run p span { float:right; width:30px; height:20px; margin:11px 15px 0 0 }
 .alarm_green { background-position:-222px -8px;}
 .alarm_grey { background-position:-178px -8px;}
 .alarm_yellow { background-position:-134px -8px;}
