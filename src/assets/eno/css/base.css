@@ -322,9 +322,11 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
     height:30px;
     background-position:-559px -51px !important;
 }
+.chartBbox {clear: both;}
 .chartBbox ul{
     width: 100%;
     height: 240px;
+    
 }
 
 .chartBbox ul li{
@@ -333,14 +335,10 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
 
 .chartBbox ul li h3{
     float: left;
-    width: 30%;
+    width: 20%;
 }
 
-.chartBbox ul li .icon{
-    width: 100px;
-    height: 100%;
-}
-
+.chartBbox ul li i {float: left; width:50px; height:50px;}
 /**=============娑擄拷楠囨い鐢告桨鐎涙劕顕遍懜鐚糰b閸掑洦宕�============**/
 .js_subnav {
     width:1820px;

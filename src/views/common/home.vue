@@ -459,16 +459,13 @@
                         <div class="chartBbox">
                             <ul>
                                 <li>
-                                    <h3>监控</h3>
-                                    <div class="icon icon_monitor_red"></div>
+                                    <h3>监控</h3><i class="icon_monitor_red"></i><span>180</span>
                                 </li>
                                 <li>
-                                    <h3>门禁</h3>
-                                    <div class="icon_small_eno alarm_green"></div>
+                                    <h3>门禁</h3><i class="icon_monitor_red"></i>
                                 </li>
                                 <li>
-                                    <h3>电梯</h3>
-                                    <div class="icon_small_eno alarm_green"></div>
+                                    <h3>电梯</h3><i class="icon_monitor_red"></i>
                                 </li>
                             </ul>
                             <!-- <div id="pieChart" style="height: 100%"></div> -->
