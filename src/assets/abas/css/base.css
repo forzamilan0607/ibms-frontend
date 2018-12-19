@@ -245,7 +245,7 @@ input[disabled].btn_red { background-color: #ffa0a5; }
     float: right;
     width: 20px;
     height: 20px;
-    background-position: 3px 6px;
+    /* background-position: 3px 6px; */
     margin: 31px 0 0 15px;
     cursor: pointer;
 }
@@ -259,7 +259,7 @@ input[disabled].btn_red { background-color: #ffa0a5; }
     background-color: #1a1c1f;
     border-radius: 5px;
     padding-top: 10px;
-    display:none;
+    /* display:none; */
     z-index: 10;
 }
 .login_user_box li {
