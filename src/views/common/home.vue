@@ -448,23 +448,46 @@
                 </div>
             </div>
             <!--right content-->
-            <div class="span3 w400 mt20 ml10">
+            <div class="span3 w400 mt20 ml10" style="padding-right:10px">
                 <div class="pubCon h300">
                     <div class="pubCon_black con_indexT280">
                         <div class="index_tit"><h2 id="energyModuleName">园区资源统计</h2></div>
                         <div class="chartBbox">
                             <ul>
                                 <li>
-                                    <h3>监控</h3><i class="icon_monitor_red"></i><span>180</span>
+                                    <h3>监控</h3>
+                                    <div class="box">
+                                        <i class="icon_monitor_available"></i>
+                                        <i class="icon_monitor_available"></i>
+                                        <i class="icon_monitor_available"></i>
+                                        <i class="icon_monitor_unavailable"></i>
+                                        <i class="icon_monitor_unavailable"></i>
+                                    </div>
+                                    <span>180</span>
                                 </li>
                                 <li>
-                                    <h3>门禁</h3><i class="icon_gate_yw"></i><span>10</span>
+                                    <h3>门禁</h3>
+                                    <div class="box">
+                                        <i class="icon_gate_available"></i>
+                                        <i class="icon_gate_available"></i>
+                                        <i class="icon_gate_available"></i>
+                                        <i class="icon_gate_available"></i>
+                                        <i class="icon_gate_unavailable"></i>
+                                     </div>
+                                    <span>10</span>
                                 </li>
                                 <li>
-                                    <h3>电梯</h3><i class="icon_elevator_blue"></i><span>5</span>
+                                    <h3>电梯</h3>
+                                    <div class="box">
+                                        <i class="icon_elevator_available"></i>
+                                        <i class="icon_elevator_available"></i>
+                                        <i class="icon_elevator_available"></i>
+                                        <i class="icon_elevator_available"></i>
+                                        <i class="icon_elevator_unavailable"></i>
+                                     </div>
+                                    <span>5</span>
                                 </li>
                             </ul>
-                            <!-- <div id="pieChart" style="height: 100%"></div> -->
                         </div>
                     </div>
                 </div>
@@ -474,13 +497,37 @@
                         <div class="chartBbox">
                             <ul>
                                 <li>
-                                    <h3>总停车</h3><i class="icon_car_blue"></i><span>180</span>
+                                    <h3>总停车</h3>
+                                    <div class="box">
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_unavailable"></i>
+                                        <i class="icon_car_unavailable"></i>
+                                    </div>
+                                    <span>180</span>
                                 </li>
                                 <li>
-                                    <h3>预约车</h3><i class="icon_car_blue"></i><span>10</span>
+                                    <h3>预约车</h3>
+                                    <div class="box">
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_available"></i>
+                                        <i class="icon_car_unavailable"></i>
+                                        <i class="icon_car_unavailable"></i>
+                                    </div>
+                                    <span>10</span>
                                 </li>
                                 <li>
-                                    <h3>车位数</h3><i class="icon_stop_car_blue"></i><span>5</span>
+                                    <h3>车位数</h3>
+                                     <div class="box">
+                                        <i class="icon_stop_car_available"></i>
+                                        <i class="icon_stop_car_available"></i>
+                                        <i class="icon_stop_car_available"></i>
+                                        <i class="icon_stop_car_unavailable"></i>
+                                        <i class="icon_stop_car_unavailable"></i>
+                                    </div>
+                                    <span>5</span>
                                 </li>
                             </ul>
                         </div>

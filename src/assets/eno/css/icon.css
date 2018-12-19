@@ -3,26 +3,50 @@
     display: inline-block;
     /*background: url(~@/assets/eno/images/icon_top.min.png) no-repeat !important;*/
 }
+.icon_car_unavailable{
+    background: url(~@/assets/eno/images/resource/car.png) no-repeat;
+    background-size: 50px 50px;
+}
 
-.icon_car_blue {
+.icon_car_available{
     background: url(~@/assets/eno/images/resource/car_blue.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 50px 50px;
 }
-.icon_stop_car_blue {
+.icon_stop_car_unavailable {
+    background: url(~@/assets/eno/images/resource/stop_car.png) no-repeat;
+    background-size: 50px 50px;
+}
+
+.icon_stop_car_available {
     background: url(~@/assets/eno/images/resource/stop_car_blue.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 50px 50px;
 }
-.icon_elevator_blue {
+.icon_elevator_unavailable {
+    background: url(~@/assets/eno/images/resource/elevator.png) no-repeat;
+    background-size: 50px 50px;
+}
+
+.icon_elevator_available {
     background: url(~@/assets/eno/images/resource/elevator_blue.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 50px 50px;
 }
-.icon_gate_yw {
+
+.icon_gate_unavailable {
+    background: url(~@/assets/eno/images/resource/gate.png) no-repeat;
+    background-size: 50px 50px;
+}
+.icon_gate_available {
     background: url(~@/assets/eno/images/resource/gate_yw.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 50px 50px;
 }
-.icon_monitor_red {
+
+.icon_monitor_unavailable {
+    background: url(~@/assets/eno/images/resource/monitor.png) no-repeat;
+    background-size: 50px 50px;
+}
+.icon_monitor_available {
     background: url(~@/assets/eno/images/resource/monitor_red.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 50px 50px;
 }
 .icon_stop {
     margin: 20px 0 0 20px;
