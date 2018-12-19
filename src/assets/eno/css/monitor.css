@@ -1,10 +1,11 @@
 /**=============runMonitor css=============**/
-.top_content { width:1920px; margin:0;}
+.top_content { width:100%; margin:0;}
 .bottom_content {
-    width: 1920px;
+    width: 100%;
     height: 220px;
     margin: 40px 0px 0px 0px !important;
 }
+
 
 #etdSystem .bg_grain_big .ulSystemTwo {height: 376px; background-color: transparent;}
 #etdSystem .bg_grain_big .systemBox {height: 51px;}
@@ -227,7 +228,26 @@
     background-color: #576a83;
     box-shadow: -1px 0 5px rgba(0,0,0,0.2), 0 -1px 5px rgba(0,0,0,0.2),1px 0 5px rgba(0,0,0,0.2);
 }
-
+.js_system_viewBar li a {
+    width: 25px;
+    height: 25px;
+    margin: 18px 33px;
+    background: url(~@/assets/eno/images/icon_big.png) no-repeat;
+}
+.js_system_viewBar li.js_system_viewBar_on a/*,
+.js_system_viewBar li:hover a */{ margin-top: 14px; }
+.js_system_viewBar li a.icon_plan { background-position: -37px -288px; }
+.js_system_viewBar li a.icon_structure { background-position: -148px -288px; }
+.js_system_viewBar li a.icon_list { background-position: -259px -288px; }
+.js_system_viewBar li a.icon_list_eno { background-position: -259px -288px; }
+.js_system_viewBar li a.icon_plan_disable { background-position: -74px -288px; }
+.js_system_viewBar li a.icon_structure_disable { background-position: -184px -288px; }
+.js_system_viewBar li a.icon_list_disable { background-position: -298px -288px; }
+.js_system_viewBar li.js_system_viewBar_on a.icon_plan, .js_system_viewBar li:hover a.icon_plan { background: url(~@/assets/eno/images/icon_big.png) no-repeat 0 -288px; }
+.js_system_viewBar li.js_system_viewBar_on a.icon_structure, .js_system_viewBar li:hover a.icon_structure { background: url(~@/assets/eno/images/icon_big.png) no-repeat -112px -288px; }
+.js_system_viewBar li.js_system_viewBar_on a.icon_list, .js_system_viewBar li:hover a.icon_list { background: url(~@/assets/eno/images/icon_big.png) no-repeat -221px -288px; }
+.js_system_viewBar li.js_system_viewBar_on a.icon_list_eno, .js_system_viewBar li:hover a.icon_list_eno { background: url(~@/assets/eno/images/icon_big.png) no-repeat -221px -288px; }
+.js_system_content { clear: both; }
 .system_top_content {
     width: 1440px;
     height: 645px;
@@ -622,6 +642,48 @@
     border-right: #777 solid 1px;
     padding: 15px;
 }
+/**=============systemBox electricity css=============**/
+
+.sys_elec_param {
+    width: 1390px;
+    height: 226px;
+    background-color: #17252f;
+    margin: 15px 0;
+    overflow: hidden;
+}
+.sys_elec_param ul { margin: 5px 0; }
+.sys_elec_param ul li {
+    float: left;
+    width: 107px;
+    color: #fff;
+    font-family: "RobotoRegular";
+}
+.sys_elec_param ul li:first-child {
+    width: 106px;
+    font-family: "Microsoft Yahei";
+}
+.sys_elec_param ul li:nth-child(even){
+    background: rgba(102, 102, 102, 0.12) !important; /* IE无效，FF有效 */
+    background: #666;
+    -ms-filter: alpha(opacity=12);
+    filter: alpha(opacity=12);
+}
+.sys_elec_param ul li p {
+    height: 43px;
+    text-align: center;
+    line-height: 43px;
+}
+.sys_elec_param ul li p:first-child {
+    height: 44px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px;
+}
+
+#waterTemperature {
+    width: 410px;
+    height: 110px;
+}
 #highcharts-12 {
     width: 410px;
 }
@@ -698,6 +760,24 @@
     margin-left: -117px;
 }
 
+.mode_cataloge {
+    padding: 0px !important;
+    background-color: #334354 !important;
+    width: 240px !important;
+    box-shadow: none !important;
+    display: inline-block;
+    height: 1000px;
+    float: left;
+}
+
+.menu_li_i {
+    width: 22px;
+    height: 20px;
+    margin: 30px 0 0 15px;
+    float: left;
+    display: inline-block;
+    background: url(~@/assets/eno/images/icon_big.png) no-repeat;
+}
 
 .menu_li {
     height: 83px !important;
@@ -819,6 +899,14 @@
 .color_2 {
     font-size: 20px !important;
     color: #fff !important;
+}
+
+.icon_list {
+    background: url(~@/assets/eno/images/icon_big.png) -259px -288px no-repeat !important;
+}
+
+.icon_list_eno {
+    background: url(~@/assets/eno/images/icon_big.png) -259px -288px no-repeat;
 }
 
 .active {
@@ -984,6 +1072,30 @@ ul.cataloge_class_one >li {
 }
 .tableList .Input[type='text'] { margin: 5px 0; }
 
+/** 机房监控 **/
+.icon_dcm {
+    float: left;
+    display: inline-block;
+    /* background: url(~@/assets/eno/images/icon_big_idc.png) 0 -295px no-repeat; */
+}
+/** 视频监控 **/
+.icon_ctv {
+    float: left;
+    display: inline-block;
+    /* background: url(~@/assets/eno/images/icon_big_idc.png) -398px -295px no-repeat; */
+}
+/** 人员定位 **/
+.icon_pls {
+    float: left;
+    display: inline-block;
+    /* background: url(~@/assets/eno/imagespls.png) no-repeat; */
+}
+/** 门禁管理 **/
+.icon_sasac {
+    float: left;
+    display: inline-block;
+    /* background: url(~@/assets/eno/images/icon_big_idc.png) -475px -295px no-repeat; */
+}
 i {
     font-style: normal;
 }
@@ -999,6 +1111,15 @@ h3 > em {
 #firstModule_ChildOne_leftUnit {
     margin-left: -170px;
 }
+.icon_cs { background-position: -650px -70px; }
+.icon_abhs { background-position: -700px -70px; }
+.icon_abahu { background-position: -750px -70px; }
+.icon_abfavu { background-position: -800px -70px; }
+.icon_abfcu { background-position: -850px -70px; }
+.icon_abtf { background-position: -900px -70px; }
+.icon_abws { background-position: -950px -70px; }
+.icon_abwd { background-position: -1000px -70px; }
+.icon_abidenv { background-position: -950px -110px; }
 
 .runNum { color: #50abd5 !important;}
 .tRed { color: red !important;}

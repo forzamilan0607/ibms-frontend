@@ -1,0 +1,510 @@
+@font-face {
+    font-family: 'RobotoThin';
+    src: url(~@/assets/common/fonts/roboto-thin-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(~@/assets/common/fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html { overflow: hidden;}
+html, body, span, h1, h2, h3, h4, h5, h6, p, a, q, em, ul, li, ol, dl, dt, dd, table, td, th, input, button, form, fieldset, legend, textarea, label, strong, img { margin:0; padding:0; }
+body { width:100%; height:1080px; background: url(~@/assets/eno/images/body_bg.jpg) no-repeat!important; font-family:"Microsoft Yahei"; font-size:16px; color:#1adfea; }
+table { border-collapse:collapse; }
+select, input { vertical-align:middle; }
+input, button, select, textarea { font-family:"Microsoft Yahei"; }
+button,button:focus { border: none; }
+ul, li { list-style-type:none; }
+input,img { border:none; }
+h1,h2,h3,h4,h5,h6,dt,strong,b { font-style:normal; font-weight:normal; }
+em,cite { font-style:normal;}
+.clearfix:after { display:block; content:".";  height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+a { text-decoration:none; outline:none; }
+a:hover, a:active, a:focus { text-decoration:none; outline:none; color:#fff; }
+input:focus { outline: none;}
+.left { float:left; }
+.right { float:right!important; }
+.center { text-align:center; }
+.bold { font-weight:bold; }
+
+em,.unit { font-family:"RobotoRegular"; color: #1adfea}
+strong { font-family:"RobotoThin"; font-weight: bold; }
+.icon_big { float:left; display:inline-block; background:url(~@/assets/eno/images/icon_big.png) no-repeat; }
+.topnav ul li a.runPlan {
+    background-position: -835px -380px;
+}
+.icon_small { display:inline-block; background:url(~@/assets/eno/images/icon_small.png) no-repeat; }
+.flag { float:left; width:4px; height:18px; }
+.flag_green { background-color: #68D100; }
+.flag_orange { background-color: #FFBB00; }
+.flag_yellow { background-color: #F9AB35; }
+.flag_blue { background-color: #5CC8E4; }
+.flag_red { background-color: #FF465A; }
+input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; line-height:30px; letter-spacing:2px; }
+input[type="text"] { height: 30px; background-color: transparent; border: 0; border-radius: 0; font-size: 16px; color: #999; margin: 0; padding: 0 0 0 10px; }
+input[type="text"]:focus { box-shadow: none; }
+input[disabled].btn_red { background-color: #ffa0a5; }
+.btn_pub { display: inline-block; height: 30px; border: 0; font-size: 18px; color: #fff; padding: 0 15px; line-height: 30px; letter-spacing:2px; }
+.btn_pub:hover,.btn_pub:active { color:#fff; text-decoration:none; }
+.btn_pub:focus { outline: none; }
+.btn_red { background-color: #FC605E; }
+.btn_red:hover,.btn_redLight:hover { background-color: #D65250; }
+.btn_blue,.Btn-pub { background-color:#5ab3d7; }
+.btn_blue:hover,.Btn-pub:hover { background-color: #4d98b7; }
+.btn_black { background-color:#333; }
+.btn_grey_disabled { background-color: #ccc; }
+.btn_grey { background-color: #999; }
+.btn_black:hover { background-color: #000; }
+.noBorder { border-right: 0!important; }
+
+/**=============字体种类=============**/
+.ft_roboto { font-family:"RobotoThin";}
+/**=============字体颜色=============**/
+.font-white { color: #fff; }
+.font-grey { color: #ccc; }
+.font-red { color: #D80000; }
+.font-orange { color: #FF9226; }
+.font-yellow { color: #FFFF00; }
+.font-blue-light { color: #BFEDFF; }
+.font-blue { color: #73DCFF !important; }
+.font-pink { color: #FF7871; }
+.font-green { color: #77D300; }
+.font-col999 { color: #999; }
+.font-yellow-deep { color: #FFC500; }
+/**=============字体大小=============**/
+.ft60 { font-size:60px; }
+.ft50 { font-size:50px; }
+.ft45 { font-size:45px; }
+.ft40 { font-size:40px; }
+.ft34 { font-size:34px; }
+.ft30 { font-size:30px; }
+.ft26 { font-size:26px; }
+.ft24 { font-size:24px; }
+.ft22 { font-size:22px; }
+.ft20 { font-size:20px; }
+.ft18 { font-size:18px; }
+.ft16 { font-size:16px; }
+.ft19 { font-size:19px; font-style: normal}
+.ft15 { font-size:15px; }
+.ft14 { font-size:14px; }
+
+/**=============宽度大小=============**/
+.w1060 { width:1060px; }
+.w400 { width:400px; }
+.w741 { width: 741px; margin-left: -370px; }
+.w1470 { width: 1470px; }
+.w1876 { width: 1876px; left: 16%; }
+/**=============高度大小=============**/
+.h930 { height:930px; }
+.h530 { height:530px; }
+.h520 { height: 520px; }
+.h470 { height:470px; }
+.h480 { height: 480px; }
+.h420 { height:420px; }
+.h370 { height:370px; }
+/**=============内外边距=============**/
+.mt30 { margin-top:30px; }
+.mt25 { margin-top:25px; }
+.mt20 { margin-top:20px; }
+.mt15 { margin-top:15px; }
+.mt10 { margin-top:10px; }
+.mt8 { margin-top:8px; }
+.mt5 { margin-top:5px; }
+.mr25 { margin-right:25px; }
+.mr20 { margin-right:20px; }
+.mr15 { margin-right:15px; }
+.mr10 { margin-right:10px; }
+.mr8 { margin-right:8px; }
+.mr5 { margin-right:5px; }
+.mb15 { margin-bottom:15px; }
+.mb10 { margin-bottom:10px; }
+.mb5 { margin-bottom:5px; }
+.ml25 { margin-left:25px; }
+.ml20 { margin-left:20px; }
+.ml15 { margin-left:15px; }
+.ml10 { margin-left:10px; }
+.ml5 { margin-left:5px!important; }
+.pt25 { padding-top:25px; }
+.pt20 { padding-top:20px; }
+.pt15 { padding-top:15px; }
+.pt10 { padding-top:10px; }
+.pt8 { padding-top:8px; }
+.pt5 { padding-top:5px; }
+.pr20 { padding-right:20px; }
+.pb25 { padding-bottom:25px; }
+.pb10 { padding-bottom:10px; }
+.pb5 { padding-bottom:5px; }
+.pl20 { padding-left:20px; }
+.pl15 { padding-left:15px; }
+.pl10 { padding-left:10px; }
+.p15_all { padding: 15px;}
+
+/*==============navbar===========*/
+.navbar {
+    width: 100% ;
+    height: 81px;
+    /*border-bottom: #e6c475 solid 2px;*/
+    background: rgba(0, 0, 0, 0.8) !important; /* IE无效，FF有效 */
+    background: #000;
+    -ms-filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height:996px;
+    padding:0;
+    clear:both;
+    overflow: hidden;
+}
+.wrapper {
+    position: relative;
+    width:100%;
+    height:996px;
+    overflow:hidden;
+    margin:0;
+}
+.topnav{ 
+    float:left; 
+    width: 60%;
+    height:81px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.logo, .topnav ul li { float:left; height:81px;}
+.logo {
+    width: 200px;
+    font-size: 40px;
+    color: #fff;
+    line-height: 82px;
+    text-align: center;
+}
+.topnav ul li a {
+    float: left;
+    width: 60px;
+    height: 81px;
+}
+.topnav ul li a.dashboard { background-position:26px 26px; }
+.topnav ul li a.runMonitor { background-position:-57px 26px; }
+.topnav ul li a.alarmManage { background-position:-140px 27px; }
+.topnav ul li a.systemLog { background-position:-219px 25px; }
+.topnav ul li a.deviceAsset { background-position:-303px 26px; }
+.topnav ul li a.timeTable { background-position:-386px 25px; }
+.topnav ul li a.userManage { background-position:-466px 26px; }
+.topnav ul li a.reportForm { background-position:-549px 26px; }
+.topnav ul li a.energyManage { background: url(~@/assets/eno/images/icon_big.png) -221px 26px no-repeat; }
+.topnav ul li a.energyControl { background-position: 26px -412px; }
+.topnav ul li a.RuleManage { background-position: -746px -382px; }
+
+.topnav ul li:hover { height:81px; background-color:#000; }
+.topnav ul li.current { width:225px; background-color:#000;}
+.topnav ul li.current span { font-size:24px; color:#fff; line-height:82px; cursor:pointer; }
+.topnav ul li:hover a.dashboard, .topnav ul li.current a.dashboard { background-position:26px -34px; }
+.topnav ul li:hover a.runMonitor, .topnav ul li.current a.runMonitor { background-position:-57px -34px; }
+.topnav ul li:hover a.alarmManage, .topnav ul li.current a.alarmManage { background-position:-140px -33px; }
+.topnav ul li:hover a.systemLog, .topnav ul li.current a.systemLog { background-position:-219px -35px; }
+.topnav ul li:hover a.deviceAsset, .topnav ul li.current a.deviceAsset { background-position:-303px -34px; }
+.topnav ul li:hover a.timeTable, .topnav ul li.current a.timeTable { background-position:-386px -35px; }
+.topnav ul li:hover a.userManage, .topnav ul li.current a.userManage { background-position:-466px -34px; }
+.topnav ul li:hover a.reportForm, .topnav ul li.current a.reportForm { background-position:-549px -34px; }.topnav ul li:hover a.energyManage, .topnav ul li.current a.energyManage { background: url(~@/assets/eno/images/icon_big.png) -221px -34px no-repeat; }
+.topnav ul li:hover a.energyControl, .topnav ul li.current a.energyControl { background-position:26px -470px; }
+.topnav ul li:hover a.RuleManage, .topnav ul li.current a.RuleManage { background-position:-746px -442px; }
+.topnav ul li:hover a.runPlan, .topnav ul li.current a.runPlan { background-position:-835px -445px; }
+.login_user {
+    float: left;
+    height: 82px;
+    width: 7%;
+    /* margin-right: 20px; */
+    line-height: 82px;
+    /* position: relative; */
+}
+.login_user a {
+    position: relative;
+    color: #9fa0a2;
+}
+.userMsg_new {
+    position: absolute;
+    top: -11px;
+    right: -16px;
+    display: block;
+    min-width: 22px;
+    height: 22px;
+    background-color: #FC605E;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+}
+.login_user i.hideUp, .login_user i.showDown {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-position: 3px 6px;
+    margin: 31px 0 0 15px;
+    cursor: pointer;
+}
+.login_user i.showDown{ background-position: -40px 0; }
+.login_user_box {
+    position: absolute;
+    top: 73px;
+    left: -15px;
+    width: 130px;
+    height: 48px;
+    background-color: #1a1c1f;
+    border-radius: 5px;
+    padding-top: 10px;
+    display:none;
+    z-index: 10;
+}
+.login_user_box li {
+    height: 40px;
+}
+.login_user_box li a {
+    display: block;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+.login_user_box li a.last{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.datebox {
+    float:left;
+    width:14%;
+    height:82px;
+    /* border-left:#000 solid 0px;
+    padding-left:28px; */
+    color:#9fa0a2;
+}
+.datebox .weather_pic {
+    float: left;
+    width: 30px;
+    height: 52px;
+    background-position: -214px -90px;
+    margin: 40px 0 0 -25px;
+}
+.datebox .weather_detail, .datebox .date .date_info {
+    float:left;
+    width:75px;
+    margin-left:10px;
+    padding-top:20px;
+}
+.datebox .weather_detail, .datebox .date .time { font-family:"RobotoThin"; }
+.datebox .weather_detail p, .datebox .date .date_info { line-height:25px; }
+.datebox .date .time { float:left; height:65px; margin-top:10px; line-height:65px; }
+.datebox .date {
+    float:left;
+    font-size: 50px;
+    margin-left:10px;
+}
+.datebox .date .date_info {
+    float:left;
+    width:100px;
+    margin-left:10px;
+}
+.searchBox_a {
+    float: right;
+    width: 240px;
+    height: 31px;
+    border-bottom: #444 solid 1px;
+    margin: 25px 50px 25px 0;
+}
+/* .search_btn_a {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat -485px 0px;
+    margin: 7px 14px 7px 0;
+} */
+.search_con_a {
+    float: left;
+    width: 195px;
+    height: 31px;
+}
+.search_con_a input[type='text'] { width: 100%; padding: 0; font-family:'Microsoft YaHei' }
+.close_btn {
+    float: right;
+    width: 14px;
+    height: 14px;
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat -725px -50px;
+    margin: 8px 0;
+}
+/*顶部二级导航 */
+.js_subnav {
+    width:1820px;
+    height:80px;
+    background-color:#17252f;
+    margin:0;
+    padding-left:100px;
+}
+.js_subnav ul li a {
+    display: block;
+    float:left;
+    padding:0 20px;
+    margin-left:70px;
+    font-size:22px;
+    line-height:80px;
+    cursor:pointer;
+    color: #999;
+}
+.js_subnav ul li.js_subnav_current a,.js_subnav ul li a:hover { color:#fff; }
+
+input.Input_tablist[type='text'] {
+    height: 28px;
+    background-color: #000;
+    border: #333 solid 1px;
+    padding: 0 20px;
+}
+.menu_li i {
+    background-position: -1174px -175px !important;
+}
+
+/*引入ENO里面的图标*/
+.icon_smallENO {
+    display: inline-block;
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat;
+
+}
+
+.searchBox {
+    display: none;
+}
+
+
+/*点击天气信息显示温度*/
+.datebox .date .time { float:left; height:65px; margin-top:10px; line-height:65px; }
+.datebox .date {
+    float:left;
+    font-size: 50px;
+    margin-left:10px;
+}
+.datebox .date .date_info {
+    float:left;
+    width:85px;
+    margin-left:19px;
+}
+
+.abas_icon {
+    background: url(~@/assets/eno/images/icon_small.png) no-repeat;
+}
+
+/**=============字体种类=============**/
+.ft_roboto { font-family:"RobotoThin";}
+/**=============字体颜色=============**/
+.font-white { color: #fff; }
+.font-grey { color: #ccc; }
+.font-red { color: #D80000; }
+.font-orange { color: #FF9226; }
+.font-yellow { color: #FFFF00; }
+.font-blue-light { color: #BFEDFF; }
+.font-blue { color: #73DCFF !important; }
+.font-pink { color: #FF7871; }
+.font-green { color: #77D300; }
+.font-col999 { color: #999; }
+.font-yellow-deep { color: #FFC500; }
+/**=============字体大小=============**/
+
+/**=============异常消息弹框 样式=============**/
+.alarm_box {
+    float: right;
+    position: relative;
+    padding: 35px 30px 0 0;
+}
+.alarm_box .yintai_alarm{
+    display: block;
+    width: 13px;
+    height: 16px;
+    background: url(~@/assets/eno/images/icon_big.png) -1182px -422px;
+}
+.alarm_yt_detail {
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.alarm_yt_detail dl dt {
+    height: 30px;
+    background: #535353;
+}
+.alarm_yt_detail .TYbar_green {
+    float: left;
+    width: 4px;
+    height: 15px;
+    background:#68D100;
+    margin: 7px 5px 0 0;
+}
+.alarm_yt_detail dl dt h4 {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+}
+.alarm_yt_detail .alarm_close {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background-position: -400px -80px;
+    margin: 10px 15px 0 0;
+}
+.alarm_yt_detail dl dd {
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.alarm_yt_detail dl dd .detail_alarm { float: left; color:#d5d5d5;  }
+.alarm_yt_detail dl dd:nth-child(odd) { background-color: #626262; }
+.alarm_yt_detail dl dd:nth-child(even) { background-color: #828384; }
+.alarm_yt_detail dl dd .detail_alarm h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.alarm_yt_detail dl dd a p {
+    font-size: 14px;
+}
+.dd_close {
+    display: none;
+    float: right;
+    width: 20px;
+    height: 22px;
+    background-position: 0 -323px;
+    margin-top: 8px;
+}
+.alarm_yt_detail dl dd:hover { background-color: #68D100; }
+.alarm_yt_detail dl dd:hover .detail_alarm { color:#000; }
+.alarm_yt_detail dl dd:hover .detail_alarm h4 { font-size: 16px; }
+.alarm_yt_detail dl dd:hover .detail_alarm p { font-size: 15px; }
+
+/**银泰消息管理**/
+.message_icon {
+    width: 24px;
+    float: right;
+    position: relative;
+    padding: 35px 30px 0 0;
+}
+/**银泰中心左上角logo**/
+.yt_logo {
+    float: left;
+    width: 200px !important;
+    height: 72px !important;
+    background: url(~@/assets/eno/images/logo/left_logo.png) no-repeat;
+    margin: 10px 0 0 40px;
+    background-size: 200px 60px
+}
+
+.park_detail{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #18d2e6;
+    text-align: center
+}

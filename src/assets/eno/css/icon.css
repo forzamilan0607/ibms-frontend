@@ -1,66 +1,110 @@
 /* 子系统图标 */
 .icon_top {
-    /* float: left; */
     display: inline-block;
-    /*background: url(~@/assets/eno/images/icon_top.min.png") no-repeat !important;*/
+    /*background: url(~@/assets/eno/images/icon_top.min.png) no-repeat !important;*/
 }
-.my_stopCarManage {
+
+.icon_car_blue {
+    background: url(~@/assets/eno/images/resource/car_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_stop_car_blue {
+    background: url(~@/assets/eno/images/resource/stop_car_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_elevator_blue {
+    background: url(~@/assets/eno/images/resource/elevator_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_gate_yw {
+    background: url(~@/assets/eno/images/resource/gate_yw.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_monitor_red {
+    background: url(~@/assets/eno/images/resource/monitor_red.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_stop {
     margin: 20px 0 0 20px;
-    background: url(~@/assets/eno/images/stop_car2_small.png) no-repeat;
+    background: url(~@/assets/eno/images/menu/stop.png) no-repeat;
+    background-size: 41px 41px;
 }
-.my_coldHotManage {
+.icon_cold_hot {
     margin: 20px 0 0 20px;
-    background: url(~@/assets/eno/images/cold_hot_small.png) no-repeat;
+    background: url(~@/assets/eno/images/menu/cold_hot.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_bgmManage {
+.icon_bgm {
     margin: 20px 0 0 20px;
-    background: url(~@/assets/eno/images/bgm_small.png) no-repeat;
+    background: url(~@/assets/eno/images/menu/bgm.png) no-repeat;
+    background-size: 41px 41px; 
 }
 
-.my_buildManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/build_small.png) no-repeat;
+.icon_build {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/build.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_elevatorManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/elevator_small.png) no-repeat;
+.icon_elevator {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/elevator.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_fireManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/fire_small.png) no-repeat;
+.icon_fire {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/fire.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_groupCtrlManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/group_ctrl_small.png) no-repeat;
+.icon_group_control {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/group_control.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_lightManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/light_small.png) no-repeat;
+.icon_light {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/light.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_monitorManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/monitor_small.png) no-repeat;
+.icon_monitor {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/monitor.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_energyManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/energy_small.png) no-repeat;
+.icon_energy {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/energy.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_coldHotSystemManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/cold_hot_system_small.png) no-repeat;
+.icon_cold_hot_system {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/cold_hot_system.png) no-repeat;
+    background-size: 41px 41px;
 }
 
-.my_voltageManage {
-    margin: 20px 0 10px 20px;
-    background: url(~@/assets/eno/images/voltage_small.png) no-repeat;
+.icon_voltage {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/voltage.png) no-repeat;
+    background-size: 41px 41px;
+}
+
+.icon_device {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/device.png) no-repeat;
+    background-size: 41px 41px;
+}
+
+.icon_system {
+    margin: 20px 0 0 20px;
+    background: url(~@/assets/eno/images/menu/system.png) no-repeat;
+    background-size: 41px 41px;
 }
 
 .topnav ul li a.dashboard { background-position: 26px 28px !important; }
@@ -93,6 +137,14 @@
 .topnav ul li:hover a.runPlan, .topnav ul li.current a.runPlan { background-position:-712px -32px !important; }
 .topnav ul li:hover a.timeTable, .topnav ul li.current a.timeTable { background-position:-788px -32px !important; }
 .topnav ul li:hover a.userManage, .topnav ul li.current a.userManage { background-position:-860px -32px !important; }
+
+/* 子系统图标 */
+/* .icon_menu {
+    float: left;
+    display: inline-block;
+    height: 35px !important;
+    background: url(~@/assets/eno/images/icon_menu.min.png) no-repeat;
+} */
 
 /** 暖通空调 **/
 .menu_hvac {

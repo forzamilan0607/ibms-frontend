@@ -1,82 +1,94 @@
 <template>
-  <div class="body">
 
-  <div class="navbar">
-
-    <h1 class="logo"></h1>
+<div class="navbar">
 
     <div class="yt_logo"></div>
 
     <div class="topnav">
         <ul>
-            <li>
-                <a href="#" class="icon_top my_stopCarManage" title="停车管理"></a>
+           <li>
+                <a href="#" class="icon_top icon_stop" title="停车管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotManage" title="冷热源管理"></a>
+                <a href="#" class="icon_top icon_cold_hot" title="冷热源管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_bgmManage" title="背景音乐"></a>
+                <a href="#" class="icon_top icon_bgm" title="背景音乐"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_buildManage" title="楼宇管理"></a>
+                <a href="#" class="icon_top icon_build" title="楼宇管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_elevatorManage" title="电梯管理"></a>
+                <a href="#" class="icon_top icon_elevator" title="电梯管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_fireManage" title="消防管理"></a>
+                <a href="#" class="icon_top icon_fire" title="消防管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_groupCtrlManage" title="操作群控"></a>
+                <a href="#" class="icon_top icon_group_control" title="操作群控"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_lightManage" title="照明管理"></a>
+                <a href="#" class="icon_top icon_light" title="照明管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_monitorManage" title="监控管理"></a>
+                <a href="#" class="icon_top icon_monitor" title="监控管理"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_energyManage" title="能耗查询"></a>
+                <a href="#" class="icon_top icon_energy" title="能耗查询"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_coldHotSystemManage" title="冷热源系统"></a>
+                <a href="#" class="icon_top icon_cold_hot_system" title="冷热源系统"></a>
             </li>
 
             <li>
-                <a href="#" class="icon_top my_voltageManage" title="变电站"></a>
+                <a href="#" class="icon_top icon_voltage" title="变电站"></a>
             </li>
+
+            <li>
+                <a href="#" class="icon_top icon_device" title="资源管理"></a>
+            </li>
+
+            <li>
+                <a href="main" class="icon_top icon_system" title="系统管理"></a>
+            </li>
+            <!-- 方便进入系统后，查询权限信息 -->
 
             <li></li>
+        </ul>
+    </div>
+    <div class="login_user"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
+        <ul class="login_user_box">
 
+
+            <li><a href="/portal/logout" class="last">退出管理</a></li>
         </ul>
     </div>
     <div class="datebox">
         <span class="weather_pic"></span>
-        <div class="weather_detail">
+        <!-- <div class="weather_detail">
             <a href="javascript:void(0);" class="weatherbar curText">
 
                 <p class="weather_info ft18"></p>
 
-                <p class="weather_temp ft_robotoB ft12"></p>
+                <p class="weather_temp ft_robotoB ft15"></p>
             </a>
-        </div>
+        </div> -->
         <div class="date">
             <span class="time ft50" id="global_time">14:38</span>
 
             <div class="date_info">
 
-                <p class="ft15" id="global_week">星期日</p>
+                <p class="ft18" id="global_week">星期日</p>
 
                 <p class="ft_robotoB ft15" id="global_date">2018-12-09</p>
 
@@ -84,544 +96,406 @@
         </div>
     </div>
 
-    <!-- 引入用户管理的导航 -->
 
-    <div class="span12 main  ng-scope" style="margin: 0px;" ng-app="portalApp">
+<div class="span12 main  ng-scope" style="margin: 0px;" ng-app="portalApp">
+    <!--container start-->
+    <div class="container">
+        <div class="span12 wrapper">
+            <!--left content-->
+            <div class="span3 w400 mt20 ml20">
+                <div class="pubCon h930">
+                    <div class="allSummary_box">
+                        <div class="s_b_one">
+                            <!--<div class="s_b_one" onclick="showBasicInfoWindow()">-->
+                        </div>
+                        <div class="s_b_two pubCon_black">
+                            <h2 class="ft30 mb10 colfff" style="cursor: pointer"
+                                id="buildingName">中国电信湖南信息园</h2>
 
+                            <p id="buildingAddress">湖南省长沙市雨花区万家丽中路200号</p>
 
-        <!--container start-->
-        <div class="container">
-            <div class="wrapper">
-                <!--left content-->
-                <div class="span3 w20 mt20 ml20">
-                    <div class="pubCon h930">
-                        <div class="allSummary_box">
-                            <div class="s_b_one">
-                                <!--<div class="s_b_one" onclick="showBasicInfoWindow()">-->
-                            </div>
-                            <div class="s_b_two pubCon_black">
-                                <h2 class="ft20 mb10 colfff" style="cursor: pointer" id="buildingName">
-                                    {{ buildingName }}
-                                </h2>
-
-                                <p id="buildingAddress">
-                                    长沙市万家丽中路
-                                </p>
-
-                                <p>
-                                    <span class="mr10">建筑面积：
-                                        <em id="buildingArea">
-                                            160000
-                                        </em>
-                                        <span class="unit">㎡</span>
-                                    </span>
-                                    </p>
-                                <p>
-                                    <span class="mr10">建造日期：
-                                        <em id="buildingTime">
-                                            <!--9-->
-                                        </em>
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="s_b_three pubCon_black">
-                                <div class="day_weather">
-                                    <div class="day_w_t left">
-                                        <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">--</strong><span
-                                                class="ml5">℃</span><span class="ml10 colfff">
-                                    
+                            <p>
+                                <span class="mr10">建筑面积：
+                                <em id="buildingArea">
+                                    160,000
+                                </em>
+                                <span class="unit">㎡</span>
+                                </span>
+                            </p>
+                            <p>
+                                <span class="mr10">建造日期：
+                                    <em id="buildingTime">
+                                        2018-11-24
+                                    </em>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="s_b_three pubCon_black">
+                            <div class="day_weather">
+                                <div class="day_w_t left">
+                                    <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">17</strong>
+                                    <em><span class="ml5">℃</span></em>
+                                 <span class="ml10 colfff">
                                     <i id="cuurent_weather_img" class="w_c_pic mr5"></i>
-                                    <span class="weather_info"></span></span></p>
+                                    <span class="weather_info"></span>
+                                </span></p>
 
-                                        <p class="w_s_range">
-                                            <span class="ff"><i class="icon_small_eno arrow_up_y_eno"></i><em
-                                                    class="ml10 mr5" id="arrow_up_y">--</em>
-                                                <!--<span class="unit">℃</span>-->
-                                            </span>
-                                            <span class="ff ml20"><i class="icon_small_eno arrow_down_y_eno"></i><em
-                                                    class="ml10 mr5" id="arrow_down_y">--</em>
-                                            <!--<span class="unit">℃</span>-->
-                                            </span>
-                                        </p>
-                                    </div>
-                                    <span class="icon_small_eno icon_config setPos"
-                                          onclick="setLeftIndoorParam()"></span>
-
-                                    <div class="day_w_q right">
-                                        <p class="mt10">湿度： <em id="current_rh_ra">--</em></p>
-
-
-                                    </div>
+                                    <p class="w_s_range">
+                                <span class="ff"><i class="icon_small_eno arrow_up_y_eno"></i><em
+                                        class="ml10 mr5" id="arrow_up_y">19</em>
+                                    <span class="unit">℃</span>
+                                </span>
+                                        <span class="ff ml20"><i class="icon_small_eno arrow_down_y_eno"></i><em
+                                                class="ml10 mr5" id="arrow_down_y">8</em>
+                                            <span class="unit">℃</span>
+                                </span>
+                                    </p>
                                 </div>
-                                <div id="indoorParam">
-                                    <dl class="day_weather_detail">
-                                        <dt>
-                                            <h3>调度大楼</h3>
-                                        </dt>
-                                        <dd>
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft12 colfff">24.3</em>
-                                            <em>℃</em>
-                                        </span>
-                                                <span class="ml5">
-                                            <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft12 colfff">35.1</em>
-                                            <em>%</em>
-                                        </span>
-                                            </p>
+                                <span class="icon_small_eno icon_config setPos"
+                                      onclick="setLeftIndoorParam()"></span>
 
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft12 colfff">717</em>
-                                            <em>ppm</em>
-                                        </span>
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                    <dl class="day_weather_detail">
-                                        <dt>
-                                            <h3>附属楼</h3>
-                                        </dt>
-                                        <dd>
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft12 colfff">25.1</em>
-                                            <em>℃</em>
-                                        </span>
-                                                <span class="ml5">
-                                            <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft12 colfff">14.3</em>
-                                            <em>%</em>
-                                        </span>
-                                            </p>
+                                <div class="day_w_q right">
+                                    <p class="mt10">湿度： <em id="current_rh_ra">36.5</em></p>
 
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft12 colfff">170</em>
-                                            <em>ppm</em>
-                                        </span>
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                    <dl class="day_weather_detail">
-                                        <dt>
-                                            <h3>通信机楼</h3>
-                                        </dt>
-                                        <dd>
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_t"></i>
-                                            <em class="ft12 colfff">5.1</em>
-                                            <em>℃</em>
-                                        </span>
-                                                <span class="ml5">
-                                            <i class="icon_small_eno icon_w_h"></i>
-                                            <em class="ft12 colfff">44.9</em>
-                                            <em>%</em>
-                                        </span>
-                                            </p>
 
-                                            <p>
-                                        <span>
-                                            <i class="icon_small_eno mr5 icon_w_c"></i>
-                                            <em class="ft12 colfff">1250</em>
-                                            <em>ppm</em>
-                                        </span>
-                                            </p>
-                                        </dd>
-                                    </dl>
                                 </div>
                             </div>
+                            <div id="indoorParam">
+                                <dl class="day_weather_detail">
+                                    <dt>
+                                        <h3>调度大楼</h3>
+                                    </dt>
+                                    <dd>
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_t"></i>
+                                <em class="ft20 colfff">24.3</em>
+                                <em>℃</em>
+                            </span>
+                                            <span class="ml5">
+                                <i class="icon_small_eno icon_w_h"></i>
+                                <em class="ft20 colfff">35.1</em>
+                                <em>%</em>
+                            </span>
+                                        </p>
+
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_c"></i>
+                                <em class="ft20 colfff">717</em>
+                                <em>ppm</em>
+                            </span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl class="day_weather_detail">
+                                    <dt>
+                                        <h3>附属楼</h3>
+                                    </dt>
+                                    <dd>
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_t"></i>
+                                <em class="ft20 colfff">25.1</em>
+                                <em>℃</em>
+                            </span>
+                                            <span class="ml5">
+                                <i class="icon_small_eno icon_w_h"></i>
+                                <em class="ft20 colfff">14.3</em>
+                                <em>%</em>
+                            </span>
+                                        </p>
+
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_c"></i>
+                                <em class="ft20 colfff">170</em>
+                                <em>ppm</em>
+                            </span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <dl class="day_weather_detail">
+                                    <dt>
+                                        <h3 style="font-size: 18px">通信机楼</h3>
+                                    </dt>
+                                    <dd>
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_t"></i>
+                                <em class="ft20 colfff">5.1</em>
+                                <em>℃</em>
+                            </span>
+                                            <span class="ml5">
+                                <i class="icon_small_eno icon_w_h"></i>
+                                <em class="ft20 colfff">44.9</em>
+                                <em>%</em>
+                            </span>
+                                        </p>
+
+                                        <p>
+                            <span>
+                                <i class="icon_small_eno mr5 icon_w_c"></i>
+                                <em class="ft20 colfff">1250</em>
+                                <em>ppm</em>
+                            </span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="park_detail">园区概况</div>
                         </div>
                     </div>
                 </div>
-                <!--center content-->
-                <div class="span9 w56 mt20 ml10">
-                    <div id="myCarousel" class="carousel slide">
-                        <!-- 轮播（Carousel）指标 -->
-                        <!-- <ol class="carousel-indicators" style="right: 500px;">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol> -->
-                        <!-- 轮播（Carousel）项目 -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="pubCon h300">
-                                    <div class="pubCon_black con_indexT">
-                                        <div class="con_i_l">
-                                            <!-- <div class="chartBbox"> -->
-                                                <div id="container" style="height: 100%"></div>
-                                            <!-- </div> -->
-                                        </div>
-                                        <div class="con_i_r">
-                                            <dl>
-                                                <dt id="c_totalEnergy_param_key1_name">昨日用电</dt>
-                                                <dd><span class="unit right pt5"
-                                                          id="c_totalEnergy_param_key1_unit">kWh</span><strong
-                                                        class="ft20 left ml20 colfff" id="lastDayElec">850</strong></dd>
-                                            </dl>
-                                            <dl>
-                                                <dt id="c_totalEnergy_param_key2_name">本月累计用电</dt>
-                                                <dd><span class="unit right pt5"
-                                                          id="c_totalEnergy_param_key2_unit">kWh</span><strong
-                                                        class="ft20 left ml20 colfff" id="currMonthElec">46,344</strong>
-                                                </dd>
-                                            </dl>
-                                            <dl class="last">
-                                                <dt id="c_totalEnergy_param_key3_name">上月用电</dt>
-                                                <dd><span class="unit right pt5"
-                                                          id="c_totalEnergy_param_key3_unit">kWh</span><strong
-                                                        class="ft20 left ml20 colfff">50,978</strong></dd>
-                                            </dl>
-                                        </div>
+            </div>
+            <!--center content-->
+            <div class="span9 w1060 mt20 ml10">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators" style="right: 500px;">
+                        <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                        <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="pubCon h480 ">
+                                <div class="pubCon_black con_indexT">
+                                    <div class="con_i_l">
+                                        <!-- <div class="chartBbox"> -->
+                                            <div id="container" style="height: 100%"></div>
+                                        <!-- </div> -->
                                     </div>
-                                    <div class="pubCon_black con_indexB">
-                                        <ul class="energy_use_status">
-                                            <li>
-                                                <div id="scaPieChart" class="chartPic_energy_havc"
-                                                     style="height: 100%"></div>
-
-                                                <p id="c_chart1_text">SCA&nbsp;&nbsp;&nbsp;</p>
-
-                                                <p><em class="ft16 colfff mr20">2,253</em>kWh</p>
-                                            </li>
-                                            <li>
-                                                <div id="bohPieChart" class="chartPic_energy_light"
-                                                     style="height: 100%"></div>
-
-                                                <p id="c_chart2_text">BOH</p>
-
-                                                <p><em class="ft16 colfff mr20">31,780</em>kWh</p>
-                                            </li>
-                                            <li>
-                                                <div id="parkPieChart" class="chartPic_energy_device"
-                                                     style="height: 100%"></div>
-
-                                                <p id="c_chart3_text">停车场</p>
-
-                                                <p><em class="ft16 colfff mr20">24,442</em>kWh</p>
-                                            </li>
-                                            <li>
-                                                <div id="coldPieChart" class="chartPic_energy_other"
-                                                     style="height: 100%"></div>
-
-                                                <p id="c_chart4_text" class="ft22">冷站</p>
-
-                                                <p><em class="ft16 colfff mr20">38,119</em>kWh</p>
-                                            </li>
-                                        </ul>
+                                    <div class="con_i_r">
+                                        <dl>
+                                            <dt id="c_totalEnergy_param_key1_name">昨日用电</dt>
+                                            <dd><span class="unit right pt5"
+                                                      id="c_totalEnergy_param_key1_unit">kWh</span><strong
+                                                    class="ft40 left ml20 colfff" id="lastDayElec">850</strong></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt id="c_totalEnergy_param_key2_name">本月累计用电</dt>
+                                            <dd><span class="unit right pt5"
+                                                      id="c_totalEnergy_param_key2_unit">kWh</span><strong
+                                                    class="ft40 left ml20 colfff" id="currMonthElec">46,344</strong>
+                                            </dd>
+                                        </dl>
+                                        <dl class="last">
+                                            <dt id="c_totalEnergy_param_key3_name">上月用电</dt>
+                                            <dd><span class="unit right pt5"
+                                                      id="c_totalEnergy_param_key3_unit">kWh</span><strong
+                                                    class="ft40 left ml20 colfff">50,978</strong></dd>
+                                        </dl>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <!--<div class="pubCon h480 ">-->
-                                <!--<div class="pubCon_black con_indexT">-->
-                                <!--<div class="con_i_l">-->
-                                <!--&lt;!&ndash;<div class="index_tit">&ndash;&gt;-->
-                                <!--&lt;!&ndash;<h2 id="todayEnergyText">信息园本月用电概况</h2>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<span class="icon_small_eno icon_config" onclick="setTotalEnergyModule()"></span>&ndash;&gt;-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--<div class="chartBbox">-->
-                                <!--<div id="container" style="height: 100%"></div>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="con_i_r">-->
-                                <!--<dl>-->
-                                <!--<dt id="c_totalEnergy_param_key1_name">昨日用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key1_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff" id="lastDayElec">850</strong></dd>-->
-                                <!--</dl>-->
-                                <!--<dl>-->
-                                <!--<dt id="c_totalEnergy_param_key2_name">本月累计用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key2_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff" id="currMonthElec">46,344</strong>-->
-                                <!--</dd>-->
-                                <!--</dl>-->
-                                <!--<dl class="last">-->
-                                <!--<dt id="c_totalEnergy_param_key3_name">上月用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key3_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff">50,978</strong></dd>-->
-                                <!--</dl>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="pubCon_black con_indexB">-->
-                                <!--<ul class="energy_use_status">-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_havc" id="msem_chart"-->
-                                <!--data-highcharts-chart="0">-->
-                                <!--</div>-->
+                                <div class="pubCon_black con_indexB">
+                                    <ul class="energy_use_status">
+                                        <li>
+                                            <div id="scaPieChart" class="chartPic_energy_havc"
+                                                 style="height: 100%"></div>
 
-                                <!--<p id="c_chart1_text">SCA&nbsp;&nbsp;&nbsp;</p>-->
+                                            <p id="c_chart1_text">通信机楼&nbsp;&nbsp;&nbsp;</p>
 
-                                <!--<p><em class="ft22 colfff mr20">2,253</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_light" id="hvac_chart"-->
-                                <!--data-highcharts-chart="1">-->
-                                <!--</div>-->
+                                            <p><em class="ft22 colfff mr20">22,530</em>kWh</p>
+                                        </li>
+                                        <li>
+                                            <div id="bohPieChart" class="chartPic_energy_light"
+                                                 style="height: 100%"></div>
 
-                                <!--<p id="c_chart2_text">BOH</p>-->
+                                            <p id="c_chart2_text">调度大楼</p>
 
-                                <!--<p><em class="ft22 colfff mr20">31,780</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_device" id="wsds_chart"-->
-                                <!--data-highcharts-chart="2">-->
+                                            <p><em class="ft22 colfff mr20">31,780</em>kWh</p>
+                                        </li>
+                                        <li>
+                                            <div id="parkPieChart" class="chartPic_energy_device"
+                                                 style="height: 100%"></div>
 
-                                <!--</div>-->
+                                            <p id="c_chart3_text">停车场</p>
 
-                                <!--<p id="c_chart3_text">停车场</p>-->
+                                            <p><em class="ft22 colfff mr20">24,442</em>kWh</p>
+                                        </li>
+                                        <li>
+                                            <div id="coldPieChart" class="chartPic_energy_other"
+                                                 style="height: 100%"></div>
 
-                                <!--<p><em class="ft22 colfff mr20">24,442</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_other" id="other_chart"-->
-                                <!--data-highcharts-chart="3">-->
-                                <!--</div>-->
+                                            <p id="c_chart4_text" class="ft22">冷站</p>
 
-                                <!--<p id="c_chart4_text" class="ft22">冷站</p>-->
-
-                                <!--<p><em class="ft22 colfff mr20">38,119</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--</ul>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                            </div>
-                            <div class="item">
-                                <!--<div class="pubCon h480 ">-->
-                                <!--<div class="pubCon_black con_indexT">-->
-                                <!--<div class="con_i_l">-->
-                                <!--&lt;!&ndash;<div class="index_tit">&ndash;&gt;-->
-                                <!--&lt;!&ndash;<h2 id="todayEnergyText">信息园本月用电概况</h2>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<span class="icon_small_eno icon_config" onclick="setTotalEnergyModule()"></span>&ndash;&gt;-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--<div class="chartBbox">-->
-                                <!--<div id="container" style="height: 100%"></div>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="con_i_r">-->
-                                <!--<dl>-->
-                                <!--<dt id="c_totalEnergy_param_key1_name">昨日用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key1_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff" id="lastDayElec">850</strong></dd>-->
-                                <!--</dl>-->
-                                <!--<dl>-->
-                                <!--<dt id="c_totalEnergy_param_key2_name">本月累计用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key2_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff" id="currMonthElec">46,344</strong>-->
-                                <!--</dd>-->
-                                <!--</dl>-->
-                                <!--<dl class="last">-->
-                                <!--<dt id="c_totalEnergy_param_key3_name">上月用电</dt>-->
-                                <!--<dd><span class="unit right pt5"-->
-                                <!--id="c_totalEnergy_param_key3_unit">kWh</span><strong-->
-                                <!--class="ft40 left ml20 colfff">50,978</strong></dd>-->
-                                <!--</dl>-->
-                                <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="pubCon_black con_indexB">-->
-                                <!--<ul class="energy_use_status">-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_havc" id="msem_chart"-->
-                                <!--data-highcharts-chart="0">-->
-                                <!--</div>-->
-
-                                <!--<p id="c_chart1_text">SCA&nbsp;&nbsp;&nbsp;</p>-->
-
-                                <!--<p><em class="ft22 colfff mr20">2,253</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_light" id="hvac_chart"-->
-                                <!--data-highcharts-chart="1">-->
-                                <!--</div>-->
-
-                                <!--<p id="c_chart2_text">BOH</p>-->
-
-                                <!--<p><em class="ft22 colfff mr20">31,780</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_device" id="wsds_chart"-->
-                                <!--data-highcharts-chart="2">-->
-                                <!--</div>-->
-
-                                <!--<p id="c_chart3_text">停车场</p>-->
-
-                                <!--<p><em class="ft22 colfff mr20">24,442</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                <!--<div class="chartPic_energy_other" id="other_chart"-->
-                                <!--data-highcharts-chart="3">-->
-                                <!--</div>-->
-
-                                <!--<p id="c_chart4_text" class="ft22">冷站</p>-->
-
-                                <!--<p><em class="ft22 colfff mr20">38,119</em>kWh</p>-->
-                                <!--</li>-->
-                                <!--</ul>-->
-                                <!--</div>-->
-                                <!--</div>-->
+                                            <p><em class="ft22 colfff mr20">38,119</em>kWh</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <!-- 轮播（Carousel）导航 -->
-                        <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                        </a> -->
+                        <div class="item">
+                            <!--  tab2  -->
+                        </div>
+                        <div class="item">
+                            <!--  tab3  -->
+                        </div>
                     </div>
-                    <!-- 子系统运行状况 -->
-                    <div class="pubCon pubCon_black h420 mt20">
-                        <div class="index_tit">
-                            <h2>子系统运行情况</h2>
+                    <!-- 轮播（Carousel）导航 -->
+                    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+                    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Previous</span>-->
+                    <!--</a>-->
+                    <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+                    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                    <!--<span class="sr-only">Next</span>-->
+                    <!--</a>-->
+                </div>
+                <!-- 子系统运行状况 -->
+                <div class="pubCon pubCon_black h420 mt30">
+                    <div class="index_tit">
+                        <h2>智能系统运行情况</h2>
 
-                            <div class="legend">
-                                <ul>
-                                    <li><i class="icon_index_on mr10"></i>正常</li>
+                        <div class="legend">
+                            <ul>
+                                <li><i class="icon_small_eno alarm_green mr10"></i>正常</li>
 
-                                    <li><i class="icon_index_off mr10"></i>未连接</li>
-                                </ul>
-                            </div>
+                                <li><i class="icon_small_eno alarm_grey mr10"></i>未连接</li>
+                            </ul>
                         </div>
-                        <div class="subSystem_run">
+                    </div>
+                    <div class="subSystem_run">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="icon_big_eno group_control"></i></a>
+
+                                <p class="colfff">冷机群控<span class=" icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_HVAC">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno light"></i>
+
+                                <p class="colfff">室外照明<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_LSPUB">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno cold_hot_system"></i>
+
+                                <p class="colfff">热源系统<span class="icon_small_eno alarm_grey"></span></p>
+
+                                <p class="colfff" id="dashboard_LSN">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno voltage"></i>
+
+                                <p class="colfff">变配电<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_ETD">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno build"></i>
+
+                                <p class="colfff">楼宇自控<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_WSDS">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno monitor"></i>
+
+                                <p class="colfff">视频监控<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_MSVDO">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno energy"></i>
+
+                                <p class="colfff">能耗计量<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_SASSA">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno entrance"></i>
+
+                                <p class="colfff">门禁管理<span class="icon_small_eno alarm_grey"></span></p>
+
+                                <p class="colfff" id="dashboard_SASAC">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno go_around"></i>
+
+                                <p class="colfff">巡更管理<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" style="color:yellow;" id="dashboard_EP">报警信息 (3)</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno elevator"></i>
+
+                                <p class="colfff">电梯运行<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_MSEM">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno fire"></i>
+
+                                <p class="colfff">消防监控<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_FAS">暂无报警</p>
+                            </li>
+                            <li>
+                                <i class="icon_big_eno stop_car"></i>
+
+                                <p class="colfff">停车管理<span class="icon_small_eno alarm_green"></span></p>
+
+                                <p class="colfff" id="dashboard_PARKM">暂无报警</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--right content-->
+            <div class="span3 w400 mt20 ml10">
+                <div class="pubCon h300">
+                    <div class="pubCon_black con_indexT280">
+                        <div class="index_tit"><h2 id="energyModuleName">园区资源统计</h2></div>
+                        <div class="chartBbox">
                             <ul>
                                 <li>
-                                    <a href="#"><i class="icon_big_eno group_control"></i></a>
-
-                                    <p class="mt5"><span class=" icon_small_eno alarm_green"></span>冷机群控</p>
-
-                                    <p class="colfff" id="dashboard_HVAC">暂无报警</p>
+                                    <h3>监控</h3><i class="icon_monitor_red"></i><span>180</span>
                                 </li>
                                 <li>
-                                    <i class="icon_big_eno light"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>室外照明</p>
-
-                                    <p class="colfff" id="dashboard_LSPUB">暂无报警</p>
+                                    <h3>门禁</h3><i class="icon_gate_yw"></i><span>10</span>
                                 </li>
                                 <li>
-                                    <i class="icon_big_eno cold_hot_system"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_grey"></span>热源系统</p>
-
-                                    <p class="colfff" id="dashboard_LSN">暂无报警</p>
+                                    <h3>电梯</h3><i class="icon_elevator_blue"></i><span>5</span>
+                                </li>
+                            </ul>
+                            <!-- <div id="pieChart" style="height: 100%"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="pubCon h300 mt30">
+                    <div class="pubCon_black con_indexT280">
+                        <div class="index_stop_car">实时停车车辆</div>
+                        <div class="chartBbox">
+                            <ul>
+                                <li>
+                                    <h3>总停车</h3><i class="icon_car_blue"></i><span>180</span>
                                 </li>
                                 <li>
-                                    <i class="icon_big_eno voltage"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>变配电</p>
-
-                                    <p class="colfff" id="dashboard_ETD">暂无报警</p>
+                                    <h3>预约车</h3><i class="icon_car_blue"></i><span>10</span>
                                 </li>
                                 <li>
-                                    <i class="icon_big_eno build"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>楼宇自控</p>
-
-                                    <p class="colfff" id="dashboard_WSDS">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno monitor"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>视频监控</p>
-
-                                    <p class="colfff" id="dashboard_MSVDO">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno energy"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>能耗计量</p>
-
-                                    <p class="colfff" id="dashboard_SASSA">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno entrance"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_grey"></span>门禁管理</p>
-
-                                    <p class="colfff" id="dashboard_SASAC">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno go_around"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>巡更管理</p>
-
-                                    <p class="colfff" id="dashboard_EP">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno elevator"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>电梯运行</p>
-
-                                    <p class="colfff" id="dashboard_MSEM">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno fire"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>消防监控</p>
-
-                                    <p class="colfff" id="dashboard_FAS">暂无报警</p>
-                                </li>
-                                <li>
-                                    <i class="icon_big_eno stop_car"></i>
-
-                                    <p class="mt5"><span class="icon_small_eno alarm_green"></span>停车管理</p>
-
-                                    <p class="colfff" id="dashboard_PARKM">暂无报警</p>
+                                    <h3>车位数</h3><i class="icon_stop_car_blue"></i><span>5</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!--right content-->
-                <div class="span3 w20 mt20 ml10">
-                    <div class="pubCon h300">
-                        <div class="pubCon_black con_indexT260">
-                            <!--<div class="index_tit"><h2 id="energyModuleName">信息园资源管理信息统计</h2></div>-->
-                            <!-- <div class="chartBbox"> -->
-                                <div id="pieChart" style="width:100%; height: 100%"></div>
-                            <!-- </div> -->
-                        </div>
-                    </div>
-                    <div class="pubCon h300 mt20">
-                        <div class="pubCon_black con_indexT260">
-                            <div class="index_stop_car">停车场实时车辆</div>
-                            <div class="chartBbox">
-                                <div class="loading"></div>
-                                <div class="stop_car_content">
-                                    <span>停车场空位</span>
-                                    <span>(总 159)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pubCon h300 mt20">
-                        <div class="pubCon_black con_indexT260">
-                            <!-- <div class="chartBbox"> -->
-                                <div id="lineChart" style="height: 100%"></div>
-                            <!-- </div> -->
-                        </div>
+                <div class="pubCon h300 mt30">
+                    <div class="pubCon_black con_indexT280">
+                        <div id="lineChart" style="height: 100%"></div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-  </div>
+</div>
 </template>
 <style scoped>
  @import "../../assets/eno/css/base.css";
@@ -629,24 +503,20 @@
  @import "../../assets/eno/css/icon.css";
  @import "../../assets/eno/css/monitor.css";
  @import "../../assets/eno/css/index.css";
+  @import "../../assets/abas/css/base.css";
 </style>
 
 <script>
- import {drawBarChart,drawPieChart,drawLineChart,drawScaPieChart,drawBohPieChart,drawParkPieChart,drawColdPieChart} from '../../assets/eno/scripts/common.js'
+ import {drawBarChart,drawLineChart,drawScaPieChart,drawBohPieChart,drawParkPieChart,drawColdPieChart} from '../../assets/eno/scripts/common.js'
  import Vue from 'vue';
   export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      buildingName: ''
     }
   },
   mounted() {
-      console.log("sdfsssdfsdf")
-    this.getBuildInfo();
     this.drawBarChart();
-    this.drawPieChart();
     this.drawLineChart();
     this.drawScaPieChart(),
     this.drawBohPieChart(),
@@ -654,21 +524,11 @@
     this.drawColdPieChart()
   },
   methods: {
-    getBuildInfo(){
-        debugger
-        var buildInfo = {}
-        buildInfo.buildingName = '中国电信湖南信息园';
-        console.log(buildInfo)
-        return buildInfo
-    },
     drawBarChart(){
         drawBarChart();
     },
     drawLineChart:function(){
         drawLineChart();
-    },
-    drawPieChart:function(){
-        drawPieChart();
     },
     drawScaPieChart:function(){
         drawScaPieChart();

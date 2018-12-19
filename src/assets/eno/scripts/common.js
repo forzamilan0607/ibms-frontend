@@ -348,7 +348,7 @@ function drawBarChart () {
   var myChart = echarts.init(dom)
   var app = {}
   let option = null
-  app.title = '信息园本月用电概况'
+  app.title = '园区用电概况'
   option = {
     title: {
       text: app.title,
@@ -360,7 +360,7 @@ function drawBarChart () {
         //  字体风格,'normal','italic','oblique'
         fontStyle: 'normal',
         //  字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-        fontWeight: 'bold',
+        fontWeight: 'normal',
         //  字体系列
         fontFamily: 'sans-serif',
         //  字体大小
@@ -370,7 +370,7 @@ function drawBarChart () {
     backgroundColor: '#080f15',
     xAxis: [{
       type: 'category',
-      data: ['12-01', '12-02', '12-03', '12-04', '12-05', '12-06', '12-07', '12-08', '12-09', '12-10', '12-11', '12-12', '12-13', '12-14', '12-15', '12-16', '12-17', '12-18', '12-19', '12-20', '12-21', '12-22', '12-23', '12-24', '12-25', '12-26', '12-27', '12-28', '12-29', '12-30'],
+      data: ['12-01', '12-02', '12-03', '12-04', '12-05', '12-06', '12-07'],
       axisTick: {
         alignWithLabel: true
       },
@@ -459,92 +459,8 @@ function drawBarChart () {
         }
       },
       //  barWidth: 7,
-      data: [10, 52, 200, 334, 390, 330, 220]
+      data: [400, 52, 200, 334, 390, 330, 860]
     }
-  }
-  if (option && typeof option === 'object') {
-    myChart.setOption(option, true)
-  }
-}
-
-function drawPieChart () {
-  var dom = document.getElementById('pieChart')
-  var myChart = echarts.init(dom)
-  var app = {}
-  let option = null
-  app.title = '信息园资源管理信息统计'
-  option = {
-    title: {
-      text: app.title,
-      left: 'center',
-      textStyle: {
-        // 文字颜色
-        color: '#ccc',
-        // 字体风格,'normal','italic','oblique'
-        fontStyle: 'normal',
-        // 字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-        fontWeight: 'bold',
-        // 字体系列
-        fontFamily: 'sans-serif',
-        // 字体大小
-        fontSize: 20
-      }
-    },
-    tooltip: {
-      trigger: 'item',
-      formatter: '{b} : {c} (占比 {d}%)'
-    },
-    color: ['#f6da22', '#bbe2e8', '#6cacde'],
-    legend: {
-      //  orient: 'vertical',
-      //  top: 'middle',
-      bottom: 8,
-      left: 'center',
-      data: ['设备总数', '在用总数', '维修总数'],
-      backgroundColor: '#fff',
-      //  borderColor: 'rgba(178,34,34,0.8)',
-      //  borderWidth: 4,
-      textStyle: {
-        //  文字颜色
-        //  color: '#ccc',
-        //  字体风格,'normal','italic','oblique'
-        fontStyle: 'normal',
-        //  字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-        fontWeight: 'bold',
-        //  字体系列
-        fontFamily: 'sans-serif',
-        //  字体大小
-        fontSize: 15
-      }
-    },
-    series: [
-      {
-        type: 'pie',
-        radius: '40%',
-        center: ['50%', '50%'],
-        selectedMode: 'single',
-        label: {
-          normal: {
-            textStyle: {
-              fontSize: 15,
-              color: '#1adfea'
-            }
-          }
-        },
-        data: [
-          { value: 2500, name: '设备总数' },
-          { value: 2300, name: '在用总数' },
-          { value: 200, name: '维修总数' }
-        ],
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-          }
-        }
-      }
-    ]
   }
   if (option && typeof option === 'object') {
     myChart.setOption(option, true)
@@ -555,82 +471,90 @@ function drawLineChart () {
   let myChart = echarts.init(document.getElementById('lineChart'))
   var app = {}
   let option = null
-  app.title = '信息园实时人流'
+  app.title = '园区实时人流'
   option = {
-    tooltip: {
-      trigger: 'axis',
-      position: function (pt) {
-        return [pt[0], '10%']
-      }
-    },
-    title: {
-      left: 'center',
-      text: app.title,
-      textStyle: {
-        //  文字颜色
-        color: '#ccc',
-        //  字体风格,'normal','italic','oblique'
-        fontStyle: 'normal',
-        // 字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-        fontWeight: 'bold',
-        // 字体系列
-        fontFamily: 'sans-serif',
-        // 字体大小
-        fontSize: 20
-      }
-    },
-    xAxis: {
-      type: 'category',
-      boundaryGap: false,
-      data: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00',
-        '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00',
-        '20:00', '21:00', '22:00', '23:00'],
-      axisLabel: {
-        show: true,
+    title : {
+        left: 'center',
+        text: app.title,
         textStyle: {
-          color: '#fff',
-          fontSize: '16'
+            //文字颜色
+            color: '#ccc',
+            //字体风格,'normal','italic','oblique'
+            fontStyle: 'normal',
+            //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+            fontWeight: 'normal',
+            //字体系列
+            fontFamily: 'sans-serif',
+            //字体大小
+            fontSize: 24
         }
-      }
     },
-    yAxis: {
-      type: 'value',
-      boundaryGap: [0, '100%'],
-      axisLabel: {
-        textStyle: {
-          color: '#9faeb5',
-          fontSize: 16
-        }
-      },
-      axisLine: {
-        lineStyle: {
-          color: '#4d4d4d'
-        }
-      }
+    tooltip : {
+        trigger: 'axis'
     },
-    series: [
-      {
-        name: '模拟数据',
-        type: 'line',
-        smooth: true,
-        symbol: 'none',
-        sampling: 'average',
-        itemStyle: {
-          color: 'rgb(255, 70, 131)'
+   legend: {
+      x: 'center', // 'center' | 'left' | {number},
+      y: 'bottom', // 'center' | 'bottom' | {number}
+      data:['总人数','预约数','外来数']
+    },
+
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00",
+                "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00",
+                "20:00", "21:00", "22:00", "23:00"],
+            axisLabel: {
+                show: true,
+                textStyle: {
+                    color: '#fff',
+                    fontSize: '16'
+                }
+            }
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel: {
+            textStyle: {
+                color: '#9faeb5',
+                fontSize: 16,
+            }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#4d4d4d'
+                }
+            }
+        }
+    ],
+    series : [
+        {
+            name:'总人数',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[0, 0, 0, 0, 0, 80, 100, 210, 300, 200, 300, 200, 200, 100, 80,60, 40, 30, 20, 10, 2, 0, 0, 0]
         },
-        areaStyle: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-            offset: 0,
-            color: 'rgb(255, 158, 68)'
-          }, {
-            offset: 1,
-            color: 'rgb(255, 70, 131)'
-          }])
+        {
+            name:'预约数',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[0, 0, 0, 0, 0, 0, 0, 40, 50, 60, 2, 2, 0, 0, 2, 70, 16, 5,16, 4, 2, 0, 0, 0]
         },
-        data: [0, 0, 0, 0, 0, 0, 0, 2, 5, 10, 2, 2, 0, 0, 2, 20, 16, 5, 6, 4, 2, 0, 0, 0]
-      }
+        {
+            name:'外来数',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[0, 0, 0, 0, 0, 0, 0, 2, 5, 10, 2, 2, 0, 0, 2, 20, 16, 5, 6, 4, 2, 0, 0, 0]
+        }
     ]
-  }
+};
   myChart.setOption(option)
 }
 
@@ -640,7 +564,7 @@ function drawScaPieChart () {
   let option = null
   option = {
     title: {
-      text: '10%',
+      text: '48%',
       x: 'center',
       y: 'center',
       textStyle:
@@ -667,7 +591,7 @@ function drawScaPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 10,
+        value: 48,
         itemStyle: {
           normal: {
             color: '#EB5D8E', //  100% 处的颜色,
@@ -680,7 +604,7 @@ function drawScaPieChart () {
           }
         }
       }, {
-        value: 90,
+        value: 52,
         itemStyle: {
           normal: {
             color: '#536882', //  100% 处的颜色,
@@ -707,7 +631,7 @@ function drawBohPieChart () {
   let option = null
   option = {
     title: {
-      text: '5%',
+      text: '36%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -734,7 +658,7 @@ function drawBohPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 5,
+        value: 36,
         itemStyle: {
           normal: {
             color: '#48B3F9', //  100% 处的颜色,
@@ -747,7 +671,7 @@ function drawBohPieChart () {
           }
         }
       }, {
-        value: 95,
+        value: 64,
         itemStyle: {
           normal: {
             color: '#536882', //  100% 处的颜色,
@@ -774,7 +698,7 @@ function drawParkPieChart () {
   let option = null
   option = {
     title: {
-      text: '13%',
+      text: '6%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -801,7 +725,7 @@ function drawParkPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 13,
+        value: 6,
         itemStyle: {
           normal: {
             color: '#EAC120', // 100% 处的颜色,
@@ -814,7 +738,7 @@ function drawParkPieChart () {
           }
         }
       }, {
-        value: 87,
+        value: 94,
         itemStyle: {
           normal: {
             color: '#536882', // 100% 处的颜色,
@@ -841,7 +765,7 @@ function drawColdPieChart () {
   let option = null
   option = {
     title: {
-      text: '16%',
+      text: '10%',
       x: 'center',
       y: 'center',
       textStyle: {
@@ -868,7 +792,7 @@ function drawColdPieChart () {
       },
       hoverAnimation: false,
       data: [{
-        value: 16,
+        value: 10,
         itemStyle: {
           normal: {
             color: '#3AF22C', // 100% 处的颜色,
@@ -881,7 +805,7 @@ function drawColdPieChart () {
           }
         }
       }, {
-        value: 84,
+        value: 90,
         itemStyle: {
           normal: {
             color: '#536882', // 100% 处的颜色,
