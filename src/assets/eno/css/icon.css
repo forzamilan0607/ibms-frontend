@@ -3,10 +3,24 @@
     display: inline-block;
     /*background: url(~@/assets/eno/images/icon_top.min.png) no-repeat !important;*/
 }
+
+.icon_car_blue {
+    background: url(~@/assets/eno/images/resource/car_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_stop_car_blue {
+    background: url(~@/assets/eno/images/resource/stop_car_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_elevator_blue {
+    background: url(~@/assets/eno/images/resource/elevator_blue.png) no-repeat;
+    background-size: 41px 41px;
+}
+.icon_gate_yw {
+    background: url(~@/assets/eno/images/resource/gate_yw.png) no-repeat;
+    background-size: 41px 41px;
+}
 .icon_monitor_red {
-    width: 100px;
-    height: 100px;
-    /* margin: 20px 0 0 20px; */
     background: url(~@/assets/eno/images/resource/monitor_red.png) no-repeat;
     background-size: 41px 41px;
 }

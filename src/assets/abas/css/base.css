@@ -31,7 +31,7 @@ input:focus { outline: none;}
 .center { text-align:center; }
 .bold { font-weight:bold; }
 
-em,.unit,.ft_robotoB { font-family:"RobotoRegular"; color: #1adfea}
+em,.unit { font-family:"RobotoRegular"; color: #1adfea}
 strong { font-family:"RobotoThin"; font-weight: bold; }
 .icon_big { float:left; display:inline-block; background:url(~@/assets/eno/images/icon_big.png) no-repeat; }
 .topnav ul li a.runPlan {
@@ -500,4 +500,11 @@ input.Input_tablist[type='text'] {
     background: url(~@/assets/eno/images/logo/left_logo.png) no-repeat;
     margin: 10px 0 0 40px;
     background-size: 200px 60px
+}
+
+.park_detail{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #18d2e6;
+    text-align: center
 }

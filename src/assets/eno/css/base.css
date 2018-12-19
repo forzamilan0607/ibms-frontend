@@ -323,29 +323,34 @@ input[type="button"]{ height:30px;  padding:0 15px; font-size:16px; color:#fff; 
     background-position:-559px -51px !important;
 }
 .chartBbox {clear: both;}
-.chartBbox ul {
-    width: 100%;
-    height: 240px;
-    
+.chartBbox ul{
+    list-style-type: none
 }
 
 .chartBbox ul li {
-    margin: 40px 0 20px 50px;
+    height: 50px;
+    margin-left: 60px;
+    line-height: 20px;
+    margin-top: 40px;
 }
 
 .chartBbox ul li h3 {
     float: left;
-    width: 20%;
+    width: 30%;
+    color: #2bcbd4;
+    font-size: 30px;
+    margin-right: 20px;
 }
 
 .chartBbox ul li span {
     width: 20px;
     display: block;
-    color: blue;
-    font-size: 30px;
+    color: #84f5a2;
+    font-size: 50px;
     margin-top: 10px;
     height: 20px;
     float: left;
+    margin-left: 30px;
 }
 
 .chartBbox ul li i {float: left; width:50px; height:50px;}

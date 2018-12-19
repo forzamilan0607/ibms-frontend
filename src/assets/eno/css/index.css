@@ -1,5 +1,4 @@
 /**=============index css=============**/
-/*.allSummary_box{ border-top:#68d100 solid 8px; }*/
 .allSummary_box .s_b_one {
     height:300px;
     /*background-size: 400px 200px;*/
@@ -15,9 +14,10 @@
     height:10%;
     padding:20px 0 0 20px;
 }
-.allSummary_box .s_b_two p {
+.allSummary_box .s_b_two,.day_weather p {
     color:#9fa0a2;
     line-height:33px;
+    font-size: 15px
 }
 .allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
 .allSummary_box .s_b_three {
@@ -40,6 +40,11 @@
     border-left:#444 solid 1px;
     padding-left:8px;
 }
+
+.allSummary_box  {
+    font-size: 10px
+}
+
 .day_weather_detail{
     height:80px;
     margin-top:10px;
@@ -96,11 +101,15 @@
     overflow:hidden;
 }
 .con_i_r dl.last { border:none;}
-.con_i_r dl dt { font-size:20px; line-height:35px; }
+.con_i_r dl dt { 
+    font-size:20px; 
+    line-height:35px;
+    color: #5AB3D7
+ }
 .con_i_r dl dd { line-height:55px;}
 
 .energy_use_status li { float:left; width:24%; border-left:#444 solid 1px;}
-.energy_use_status p { float:left; margin-top:24px; font-size:20px; }
+.energy_use_status p { float:left; margin-top:24px; font-size:20px;color: #5AB3D7; }
 
 .chartPic_energy_havc,
 .chartPic_energy_light,
@@ -124,14 +133,18 @@
     line-height:32px;
 }
 
-.index_tit {}
-.index_tit h2 {
+.index_tit {
     float:left;
     font-size:24px;
     color:#fff;
     width: 100%;
+    height: 60px;
     text-align: center;
 }
+ .index_tit h2 {
+    font-size:24px;
+    color:#fff;
+} 
 .index_stop_car{
     width: 400px;
     height: 40px;

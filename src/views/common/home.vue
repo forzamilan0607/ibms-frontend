@@ -59,7 +59,7 @@
             </li>
 
             <li>
-                <a href="#" class="icon_top icon_system" title="系统管理"></a>
+                <a href="main" class="icon_top icon_system" title="系统管理"></a>
             </li>
             <!-- 方便进入系统后，查询权限信息 -->
 
@@ -110,28 +110,24 @@
                         </div>
                         <div class="s_b_two pubCon_black">
                             <h2 class="ft30 mb10 colfff" style="cursor: pointer"
-                                id="buildingName">
-                            中国电信湖南信息园
-                            </h2>
+                                id="buildingName">中国电信湖南信息园</h2>
 
-                            <p id="buildingAddress">
-                                湖南省长沙市雨花区万家丽中路200号
-                            </p>
+                            <p id="buildingAddress">湖南省长沙市雨花区万家丽中路200号</p>
 
                             <p>
-                        <span class="mr10">建筑面积：
-                            <em id="buildingArea">
-                                160,000
-                            </em>
-                            <span class="unit">㎡</span>
-                        </span>
+                                <span class="mr10">建筑面积：
+                                <em id="buildingArea">
+                                    160,000
+                                </em>
+                                <span class="unit">㎡</span>
+                                </span>
                             </p>
                             <p>
-                        <span class="mr10">建造日期：
-                            <em id="buildingTime">
-                                2018-11-24
-                            </em>
-                        </span>
+                                <span class="mr10">建造日期：
+                                    <em id="buildingTime">
+                                        2018-11-24
+                                    </em>
+                                </span>
                             </p>
                         </div>
                         <div class="s_b_three pubCon_black">
@@ -247,7 +243,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <h2 style="text-align: center;">园区概况</h2>
+                            <div class="park_detail">园区概况</div>
                         </div>
                     </div>
                 </div>
@@ -462,10 +458,10 @@
                                     <h3>监控</h3><i class="icon_monitor_red"></i><span>180</span>
                                 </li>
                                 <li>
-                                    <h3>门禁</h3><i class="icon_monitor_red"></i>
+                                    <h3>门禁</h3><i class="icon_gate_yw"></i><span>10</span>
                                 </li>
                                 <li>
-                                    <h3>电梯</h3><i class="icon_monitor_red"></i>
+                                    <h3>电梯</h3><i class="icon_elevator_blue"></i><span>5</span>
                                 </li>
                             </ul>
                             <!-- <div id="pieChart" style="height: 100%"></div> -->
@@ -474,21 +470,25 @@
                 </div>
                 <div class="pubCon h300 mt30">
                     <div class="pubCon_black con_indexT280">
-                        <div class="index_stop_car">停车场实时车辆</div>
+                        <div class="index_stop_car">实时停车车辆</div>
                         <div class="chartBbox">
-                            <div class="loading"></div>
-                            <div class="stop_car_content">
-                                <span>停车场空位</span>
-                                <span>(总 159)</span>
-                            </div>
+                            <ul>
+                                <li>
+                                    <h3>总停车</h3><i class="icon_car_blue"></i><span>180</span>
+                                </li>
+                                <li>
+                                    <h3>预约车</h3><i class="icon_car_blue"></i><span>10</span>
+                                </li>
+                                <li>
+                                    <h3>车位数</h3><i class="icon_stop_car_blue"></i><span>5</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="pubCon h300 mt30">
                     <div class="pubCon_black con_indexT280">
-                        <div class="chartBbox">
-                            <div id="lineChart" style="height: 100%"></div>
-                        </div>
+                        <div id="lineChart" style="height: 100%"></div>
                     </div>
                 </div>
             </div>
@@ -507,7 +507,7 @@
 </style>
 
 <script>
- import {drawBarChart,drawPieChart,drawLineChart,drawScaPieChart,drawBohPieChart,drawParkPieChart,drawColdPieChart} from '../../assets/eno/scripts/common.js'
+ import {drawBarChart,drawLineChart,drawScaPieChart,drawBohPieChart,drawParkPieChart,drawColdPieChart} from '../../assets/eno/scripts/common.js'
  import Vue from 'vue';
   export default {
   name: 'hello',
@@ -516,9 +516,7 @@
     }
   },
   mounted() {
-    this.getBuildInfo();
     this.drawBarChart();
-    // this.drawPieChart();
     this.drawLineChart();
     this.drawScaPieChart(),
     this.drawBohPieChart(),
@@ -526,20 +524,11 @@
     this.drawColdPieChart()
   },
   methods: {
-    getBuildInfo(){
-        var buildInfo = {}
-        buildInfo.buildingName = '中国电信湖南信息园';
-        console.log(buildInfo)
-        return buildInfo
-    },
     drawBarChart(){
         drawBarChart();
     },
     drawLineChart:function(){
         drawLineChart();
-    },
-    drawPieChart:function(){
-        drawPieChart();
     },
     drawScaPieChart:function(){
         drawScaPieChart();
