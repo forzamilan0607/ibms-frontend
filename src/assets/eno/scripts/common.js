@@ -356,7 +356,7 @@ function drawBarChart () {
       y: '10',
       textStyle: {
         //  文字颜色
-        color: '#ccc',
+        color: '#fff',
         //  字体风格,'normal','italic','oblique'
         fontStyle: 'normal',
         //  字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
@@ -475,10 +475,11 @@ function drawLineChart () {
   option = {
     title : {
         left: 'center',
+        y: 10,
         text: app.title,
         textStyle: {
             //文字颜色
-            color: '#ccc',
+            color: '#fff',
             //字体风格,'normal','italic','oblique'
             fontStyle: 'normal',
             //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...

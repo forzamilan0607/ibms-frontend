@@ -27,84 +27,84 @@
 .icon_stop {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/stop.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 .icon_cold_hot {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/cold_hot.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_bgm {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/bgm.png) no-repeat;
-    background-size: 41px 41px; 
+    background-size: 36px 36px;
 }
 
 .icon_build {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/build.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_elevator {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/elevator.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_fire {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/fire.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_group_control {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/group_control.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_light {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/light.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_monitor {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/monitor.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_energy {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/energy.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_cold_hot_system {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/cold_hot_system.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_voltage {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/voltage.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_device {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/device.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .icon_system {
     margin: 20px 0 0 20px;
     background: url(~@/assets/eno/images/menu/system.png) no-repeat;
-    background-size: 41px 41px;
+    background-size: 36px 36px;
 }
 
 .topnav ul li a.dashboard { background-position: 26px 28px !important; }

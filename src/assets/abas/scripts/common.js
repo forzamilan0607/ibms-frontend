@@ -844,12 +844,12 @@ function drawBarChart(xAxisData,barData) {
             y: "10",
             textStyle: {
                 //文字颜色
-                color: '#ccc',
+                color: '#080f15',
                 //字体风格,'normal','italic','oblique'
                 fontStyle: 'normal',
                 //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
                 fontWeight: 'bold',
-                //字体系列
+                //字体系列080f15
                 fontFamily: 'sans-serif',
                 //字体大小
                 fontSize: 24

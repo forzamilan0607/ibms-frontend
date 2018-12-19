@@ -59,7 +59,7 @@
             </li>
 
             <li>
-                <a href="main" class="icon_top icon_system" title="系统管理"></a>
+                <a href="main/" class="icon_top icon_system" title="系统管理"></a>
             </li>
             <!-- 方便进入系统后，查询权限信息 -->
 
@@ -243,7 +243,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <div class="park_detail">园区概况</div>
+                            <!-- <div class="park_detail">园区概况</div> -->
                         </div>
                     </div>
                 </div>
@@ -470,7 +470,7 @@
                 </div>
                 <div class="pubCon h300 mt30">
                     <div class="pubCon_black con_indexT280">
-                        <div class="index_stop_car">实时停车车辆</div>
+                        <div class="index_tit"><h2>实时停车车辆</h2></div>
                         <div class="chartBbox">
                             <ul>
                                 <li>
@@ -488,7 +488,7 @@
                 </div>
                 <div class="pubCon h300 mt30">
                     <div class="pubCon_black con_indexT280">
-                        <div id="lineChart" style="height: 100%"></div>
+                        <div id="lineChart" style="width:100%; height: 100%"></div>
                     </div>
                 </div>
             </div>

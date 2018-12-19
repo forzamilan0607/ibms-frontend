@@ -80,7 +80,7 @@
             }).then(({data}) => {
               if (data && data.code === 200) {
                 this.$cookie.set('token', data.token)
-                this.$router.replace({ name: 'home' })
+                this.$router.replace({ name: 'main' })
               } else {
                 this.getCaptcha()
                 this.$message.error(data.msg)
