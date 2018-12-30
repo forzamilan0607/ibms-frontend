@@ -21,6 +21,13 @@
 3. 启动服务
 
    npm run dev
+ 
+4. 打包和发布
+
+  npm run build 在应用根目录下生成 dist 文件夹，上传到服务器
+  
+  服务器使用 nginx 代理访问，监听 8091 端口
+  
 
 ## 修改 API 地址
 /static/config/index.js 目录文件中 window.SITE_CONFIG['baseUrl'] = '本地api接口请求地址';
