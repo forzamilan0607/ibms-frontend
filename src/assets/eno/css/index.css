@@ -21,7 +21,7 @@
 }
 .allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
 .allSummary_box .s_b_three {
-    height:460px;
+    height:440px;
     padding:0 15px;
 }
 .day_weather {
@@ -101,8 +101,8 @@
     overflow:hidden;
 }
 .con_i_r dl.last { border:none;}
-.con_i_r dl dt { 
-    font-size:20px; 
+.con_i_r dl dt {
+    font-size:20px;
     line-height:35px;
     color: #5AB3D7
  }
@@ -145,7 +145,7 @@
     font-size:24px;
     color:#fff;
     margin-top:10px
-} 
+}
 .index_stop_car{
     width: 400px;
     height: 40px;
@@ -190,7 +190,7 @@
     margin:20px 0 0 20px;
 }
 .subSystem_run ul li i { width:50px; height:50px; margin:17px 23px 13px 17px; }
-.subSystem_run ul li p { 
+.subSystem_run ul li p {
     font-size: 16px;
     line-height: 40px;
     margin-left: 20px;

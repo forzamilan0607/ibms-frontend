@@ -5,6 +5,8 @@
 
 $(function () {
 
+    debugger;
+
     getWeather(); //获取天气
 
     getParkInfo(); //获取园区信息
@@ -1020,7 +1022,7 @@ function drawLineChart() {
             }
         ]
     };
-                        
+
 
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
