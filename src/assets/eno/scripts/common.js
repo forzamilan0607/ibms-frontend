@@ -1,4 +1,5 @@
 import echarts from 'echarts'
+
 /**
  * 动态设置日期时间和星期
  */
@@ -191,29 +192,29 @@ function getWeather () {
   //        $('.weather_temp').html(data.data.minTemperature + '/' + data.data.maxTemperature)
   //        $('.weather_pic').attr('style', 'background:url(' + data.data.img2 + ') no-repeat  ')
   //        $('.weather_info').html(data.data.weather)
-        //    var temperature = data.weather.temperature
-        //    temperature = temperature === null ? '-' : temperature
-        //    $('#current_t_ra').html(temperature)   //  当前温度
-        //    var humidity = data.weather.humidity
-        //    if (humidity === null || humidity === '' || humidity === undefined) {
-        //      humidity = '--'
-        //    }
-        //    $('#current_rh_ra').html(humidity + '%')  //  湿度
-        // 
-        //    //  todo 银泰项目，现场没有温湿度传感器，使用互联网上取到的数据
-        //    try {
-        //      $('#runmonitor_temperature').html(temperature)  //  室外干球温度
-        //      $('#runmonitor_humidity').html(humidity)  //  室外相对湿度
-        //    } catch (e) {
-        //      console.warn('室外温湿度获取失败')
-        //    }
-        //    //  todo 清华项目，Dashboard上的室外干球温度和湿度，使用互联网上取到的数据
-        //    try {
-        //      $('#outdoor_temp_temperature').html(temperature)  //  室外干球温度
-        //      $('#outdoor_temp_humidity').html(humidity)  //  室外相对湿度
-        //    } catch (e) {
-        //      console.warn('清华项目，室外温湿度获取失败')
-        //    }
+  //    var temperature = data.weather.temperature
+  //    temperature = temperature === null ? '-' : temperature
+  //    $('#current_t_ra').html(temperature)   //  当前温度
+  //    var humidity = data.weather.humidity
+  //    if (humidity === null || humidity === '' || humidity === undefined) {
+  //      humidity = '--'
+  //    }
+  //    $('#current_rh_ra').html(humidity + '%')  //  湿度
+  //
+  //    //  todo 银泰项目，现场没有温湿度传感器，使用互联网上取到的数据
+  //    try {
+  //      $('#runmonitor_temperature').html(temperature)  //  室外干球温度
+  //      $('#runmonitor_humidity').html(humidity)  //  室外相对湿度
+  //    } catch (e) {
+  //      console.warn('室外温湿度获取失败')
+  //    }
+  //    //  todo 清华项目，Dashboard上的室外干球温度和湿度，使用互联网上取到的数据
+  //    try {
+  //      $('#outdoor_temp_temperature').html(temperature)  //  室外干球温度
+  //      $('#outdoor_temp_humidity').html(humidity)  //  室外相对湿度
+  //    } catch (e) {
+  //      console.warn('清华项目，室外温湿度获取失败')
+  //    }
   //      }
   //    }
   //  })
@@ -445,14 +446,14 @@ function drawBarChart () {
               offset: 0,
               color: 'rgba(255,37,117,0.7)'
             },
-            {
-              offset: 0.5,
-              color: 'rgba(0,133,245,0.7)'
-            },
-            {
-              offset: 1,
-              color: 'rgba(0,133,245,0.3)'
-            }
+              {
+                offset: 0.5,
+                color: 'rgba(0,133,245,0.7)'
+              },
+              {
+                offset: 1,
+                color: 'rgba(0,133,245,0.3)'
+              }
             ],
             globalCoord: false
           }
@@ -473,89 +474,89 @@ function drawLineChart () {
   let option = null
   app.title = '园区实时人流'
   option = {
-    title : {
-        left: 'center',
-        y: 10,
-        text: app.title,
-        textStyle: {
-            //文字颜色
-            color: '#fff',
-            //字体风格,'normal','italic','oblique'
-            fontStyle: 'normal',
-            //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
-            fontWeight: 'normal',
-            //字体系列
-            fontFamily: 'sans-serif',
-            //字体大小
-            fontSize: 24
-        }
+    title: {
+      left: 'center',
+      y: 10,
+      text: app.title,
+      textStyle: {
+        //文字颜色
+        color: '#fff',
+        //字体风格,'normal','italic','oblique'
+        fontStyle: 'normal',
+        //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+        fontWeight: 'normal',
+        //字体系列
+        fontFamily: 'sans-serif',
+        //字体大小
+        fontSize: 24
+      }
     },
-    tooltip : {
-        trigger: 'axis'
+    tooltip: {
+      trigger: 'axis'
     },
-   legend: {
+    legend: {
       x: 'center', // 'center' | 'left' | {number},
       y: 'bottom', // 'center' | 'bottom' | {number}
-      data:['总人数','预约数','外来数']
+      data: ['总人数', '预约数', '外来数']
     },
 
-    calculable : true,
-    xAxis : [
-        {
-            type : 'category',
-            boundaryGap : false,
-            data : ["00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00",
-                "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00",
-                "20:00", "21:00", "22:00", "23:00"],
-            axisLabel: {
-                show: true,
-                textStyle: {
-                    color: '#fff',
-                    fontSize: '16'
-                }
-            }
+    calculable: true,
+    xAxis: [
+      {
+        type: 'category',
+        boundaryGap: false,
+        data: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00',
+          '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00',
+          '20:00', '21:00', '22:00', '23:00'],
+        axisLabel: {
+          show: true,
+          textStyle: {
+            color: '#fff',
+            fontSize: '16'
+          }
         }
+      }
     ],
-    yAxis : [
-        {
-            type : 'value',
-            axisLabel: {
-            textStyle: {
-                color: '#9faeb5',
-                fontSize: 16,
-            }
-            },
-            axisLine: {
-                lineStyle: {
-                    color: '#4d4d4d'
-                }
-            }
+    yAxis: [
+      {
+        type: 'value',
+        axisLabel: {
+          textStyle: {
+            color: '#9faeb5',
+            fontSize: 16,
+          }
+        },
+        axisLine: {
+          lineStyle: {
+            color: '#4d4d4d'
+          }
         }
+      }
     ],
-    series : [
-        {
-            name:'总人数',
-            type:'line',
-            smooth:true,
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data:[0, 0, 0, 0, 0, 80, 100, 210, 300, 200, 300, 200, 200, 100, 80,60, 40, 30, 20, 10, 2, 0, 0, 0]
-        },
-        {
-            name:'预约数',
-            type:'line',
-            smooth:true,
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data:[0, 0, 0, 0, 0, 0, 0, 40, 50, 60, 2, 2, 0, 0, 2, 70, 16, 5,16, 4, 2, 0, 0, 0]
-        },
-        {
-            name:'外来数',
-            type:'line',
-            smooth:true,
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data:[0, 0, 0, 0, 0, 0, 0, 2, 5, 10, 2, 2, 0, 0, 2, 20, 16, 5, 6, 4, 2, 0, 0, 0]
-        }
+    series: [
+      {
+        name: '总人数',
+        type: 'line',
+        smooth: true,
+        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+        data: [0, 0, 0, 0, 0, 80, 100, 210, 300, 200, 300, 200, 200, 100, 80, 60, 40, 30, 20, 10, 2, 0, 0, 0]
+      },
+      {
+        name: '预约数',
+        type: 'line',
+        smooth: true,
+        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+        data: [0, 0, 0, 0, 0, 0, 0, 40, 50, 60, 2, 2, 0, 0, 2, 70, 16, 5, 16, 4, 2, 0, 0, 0]
+      },
+      {
+        name: '外来数',
+        type: 'line',
+        smooth: true,
+        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+        data: [0, 0, 0, 0, 0, 0, 0, 2, 5, 10, 2, 2, 0, 0, 2, 20, 16, 5, 6, 4, 2, 0, 0, 0]
+      }
     ]
-};
+  }
   myChart.setOption(option)
 }
 
@@ -569,11 +570,11 @@ function drawScaPieChart () {
       x: 'center',
       y: 'center',
       textStyle:
-      {
-        fontWeight: 'normal',
-        color: '#0580f2',
-        fontSize: '16'
-      }
+        {
+          fontWeight: 'normal',
+          color: '#0580f2',
+          fontSize: '16'
+        }
     },
     series: [{
       name: 'Line 1',
