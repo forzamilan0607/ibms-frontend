@@ -354,7 +354,7 @@ function drawBarChart () {
     title: {
       text: app.title,
       left: 'center',
-      y: '10',
+      y: '15',
       textStyle: {
         //  文字颜色
         color: '#fff',
@@ -476,7 +476,7 @@ function drawLineChart () {
   option = {
     title: {
       left: 'center',
-      y: 10,
+      y: 15,
       text: app.title,
       textStyle: {
         //文字颜色
