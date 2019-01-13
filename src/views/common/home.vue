@@ -38,13 +38,13 @@
             </a>
         </div> -->
         <div class="date">
-          <span class="time ft50" id="global_time">14:38</span>
+          <span class="time ft50" id="global_time">{{day}}</span>
 
           <div class="date_info">
 
-            <p class="ft18" id="global_week">星期日</p>
+            <p class="ft18" id="global_week">{{week}}</p>
 
-            <p class="ft_robotoB ft15" id="global_date">2018-12-09</p>
+            <p class="ft_robotoB ft15" id="global_date">{{year}}</p>
 
           </div>
         </div>
@@ -82,7 +82,7 @@
           <div class="s_b_three pubCon_black">
             <div class="day_weather">
               <div class="day_w_t left">
-                <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">17</strong>
+                <p class="mb10"><strong class="ft50 colfff" id="current_t_ra">5</strong>
                   <em><span class="ml5">℃</span></em>
                   <span class="ml10 colfff">
                                     <i id="cuurent_weather_img" class="w_c_pic mr5"></i>
@@ -91,11 +91,11 @@
 
                 <p class="w_s_range">
                                 <span class="ff"><i class="icon_small_eno arrow_up_y_eno"></i><em
-                                  class="ml10 mr5" id="arrow_up_y">19</em>
+                                  class="ml10 mr5" id="arrow_up_y">7</em>
                                     <span class="unit">℃</span>
                                 </span>
                   <span class="ff ml20"><i class="icon_small_eno arrow_down_y_eno"></i><em
-                    class="ml10 mr5" id="arrow_down_y">8</em>
+                    class="ml10 mr5" id="arrow_down_y">4</em>
                                             <span class="unit">℃</span>
                                 </span>
                 </p>
@@ -411,7 +411,7 @@
                     <i class="icon_monitor_unavailable"></i>
                     <i class="icon_monitor_unavailable"></i>
                   </div>
-                  <span>180</span>
+                  <span>100</span>
                 </li>
                 <li>
                   <h3>门禁</h3>
@@ -422,7 +422,7 @@
                     <i class="icon_gate_available"></i>
                     <i class="icon_gate_unavailable"></i>
                   </div>
-                  <span>10</span>
+                  <span>5</span>
                 </li>
                 <li>
                   <h3>电梯</h3>
@@ -433,7 +433,7 @@
                     <i class="icon_elevator_available"></i>
                     <i class="icon_elevator_unavailable"></i>
                   </div>
-                  <span>5</span>
+                  <span>4</span>
                 </li>
               </ul>
             </div>
@@ -453,7 +453,7 @@
                     <i class="icon_car_unavailable"></i>
                     <i class="icon_car_unavailable"></i>
                   </div>
-                  <span>180</span>
+                  <span>100</span>
                 </li>
                 <li>
                   <h3>预约车</h3>
@@ -464,7 +464,7 @@
                     <i class="icon_car_unavailable"></i>
                     <i class="icon_car_unavailable"></i>
                   </div>
-                  <span>10</span>
+                  <span>50</span>
                 </li>
                 <li>
                   <h3>车位数</h3>
@@ -475,7 +475,7 @@
                     <i class="icon_stop_car_unavailable"></i>
                     <i class="icon_stop_car_unavailable"></i>
                   </div>
-                  <span>5</span>
+                  <span>300</span>
                 </li>
               </ul>
             </div>
@@ -510,13 +510,16 @@
     drawColdPieChart
   } from '../../assets/eno/scripts/common.js'
   import { clearLoginInfo } from '@/utils'
-  import Vue from 'vue'
+  let moment = require('moment');
 
   export default {
     name: 'hello',
     data () {
       return {
-        hideUp : true
+        hideUp : true,
+        year:'',            //做变量渲染
+        day:'',
+        week:''
       }
     },
     mounted () {
@@ -526,8 +529,27 @@
       this.drawBohPieChart()
       this.drawParkPieChart()
       this.drawColdPieChart()
+      this.LopTime()
     },
     methods: {
+      getTime(){
+        let week = [        //把一周七天用数组的形式方便获取时间索引
+          '星期日',
+          '星期一',
+          '星期二',
+          '星期三',
+          '星期四',
+          '星期五',
+          '星期六'
+        ]
+        this.year = moment().format(" YYYY-MM-DD")    //这里是库中已经声明好了的时间格式，具体的可以去官方文档查看
+        this.day = moment().format("HH:mm")
+        this.week = week[moment().format("d")]        //因为需求要展示的是中文的星期几，所以这里对week进行了处理，加了个索引
+        // console.log(this.week)
+      },
+      LopTime(){
+        setInterval(this.getTime,1000)   //对获取的时间，用定时器让它动起来，定时器中调用getTime方法，注意不能加（），调用函数
+      },
       drawBarChart () {
         drawBarChart()
       },

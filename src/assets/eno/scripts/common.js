@@ -371,7 +371,7 @@ function drawBarChart () {
     backgroundColor: '#080f15',
     xAxis: [{
       type: 'category',
-      data: ['12-01', '12-02', '12-03', '12-04', '12-05', '12-06', '12-07'],
+      data: ['01-07', '01-08', '01-09', '01-10', '01-11', '01-12', '01-13'],
       axisTick: {
         alignWithLabel: true
       },
@@ -460,7 +460,7 @@ function drawBarChart () {
         }
       },
       //  barWidth: 7,
-      data: [400, 52, 200, 334, 390, 330, 860]
+      data: [400, 52, 200, 334, 390, 330, 850]
     }
   }
   if (option && typeof option === 'object') {
@@ -497,7 +497,19 @@ function drawLineChart () {
     legend: {
       x: 'center', // 'center' | 'left' | {number},
       y: 'bottom', // 'center' | 'bottom' | {number}
-      data: ['总人数', '预约数', '外来数']
+      data: ['总人数', '预约数', '外来数'],
+      textStyle: {
+        //文字颜色
+        color: '#fff',
+        //字体风格,'normal','italic','oblique'
+        fontStyle: 'normal',
+        //字体粗细 'normal','bold','bolder','lighter',100 | 200 | 300 | 400...
+        fontWeight: 'normal',
+        //字体系列
+        fontFamily: 'sans-serif',
+        //字体大小
+        fontSize: 15
+      }
     },
 
     calculable: true,
@@ -830,7 +842,6 @@ function drawColdPieChart () {
 
 export {
   drawBarChart,
-  drawPieChart,
   drawLineChart,
   drawScaPieChart,
   drawBohPieChart,
