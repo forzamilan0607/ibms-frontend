@@ -548,16 +548,6 @@
       },
       dropDown: function () {
         this.hideUp = !this.hideUp
-        Vue.$refs.login_user_box.slideToggle("slow");
-        // debugger
-        // if (this.$refs.dropdown.hasClass("showDown")) {
-        //   Vue.$refs['login_user'].removeClass("showDown").addClass("hideUp");
-        // } else {
-        //   Vue.$refs['login_user'].removeClass("hideUp").addClass("showDown");
-        // }
-        // Vue.$refs['login_user_box'].slideToggle("slow");
-        // Vue.$refs['video'].play();
-        // $(".login_user_box").slideToggle("slow");
       },
       // 退出
       logoutHandle () {
