@@ -249,7 +249,7 @@ input[disabled].btn_red { background-color: #ffa0a5; }
     margin: 31px 0 0 15px;
     cursor: pointer;
 }
-.login_user i.showDown{ background-position: -40px 0; }
+.login_user i.showDown{ background-position: -274px -9px; }
 .login_user_box {
     position: absolute;
     top: 73px;

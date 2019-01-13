@@ -788,17 +788,22 @@ input[type="button"] {
   color: #9fa0a2;
 }
 
-.login_user i.hideUp, .login_user i.showDown {
+.login_user i.hideUp{
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-position: -255px -144px;
+  margin: 31px 0 0 15px;
+  cursor: pointer;
+}
+
+.login_user i.showDown {
   float: right;
   width: 20px;
   height: 20px;
   background-position: -274px -9px;
   margin: 31px 0 0 15px;
   cursor: pointer;
-}
-
-.login_user i.showDown {
-  background-position: -255px -144px;
 }
 
 .login_user_box {
@@ -810,7 +815,7 @@ input[type="button"] {
   background-color: #1a1c1f;
   border-radius: 5px;
   padding-top: 10px;
-  display: none;
+  /*display: none;*/
   z-index: 40;
 }
 

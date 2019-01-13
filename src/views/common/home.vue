@@ -22,8 +22,10 @@
           <li><a href="/" class="icon_top icon_system" title="系统管理"></a></li>
         </ul>
       </div>
-      <div class="login_user" @click="dropDown()"><a href="javascript: void(0);" class="ft20">smartpark</a><i class="icon_small hideUp"></i>
-        <ul class="login_user_box">
+      <div class="login_user" @click="dropDown()">
+        <a href="javascript: void(0);" class="ft20">smartpark</a>
+        <i class="icon_small" :class="(hideUp)?'hideUp':'showDown'"></i>
+        <ul class="login_user_box" :style="(hideUp)?'display:none':''">
           <li><a @click="logoutHandle()" class="last">退出</a></li>
         </ul>
       </div>
@@ -508,11 +510,14 @@
     drawColdPieChart
   } from '../../assets/eno/scripts/common.js'
   import { clearLoginInfo } from '@/utils'
+  import Vue from 'vue'
 
   export default {
     name: 'hello',
     data () {
-      return {}
+      return {
+        hideUp : true
+      }
     },
     mounted () {
       this.drawBarChart()
@@ -542,12 +547,17 @@
         drawColdPieChart()
       },
       dropDown: function () {
-        if ($(this).hasClass("showDown")) {
-          $(this).removeClass("showDown").addClass("hideUp");
-        } else {
-          $(this).removeClass("hideUp").addClass("showDown");
-        }
-        $(".login_user_box").slideToggle("slow");
+        this.hideUp = !this.hideUp
+        Vue.$refs.login_user_box.slideToggle("slow");
+        // debugger
+        // if (this.$refs.dropdown.hasClass("showDown")) {
+        //   Vue.$refs['login_user'].removeClass("showDown").addClass("hideUp");
+        // } else {
+        //   Vue.$refs['login_user'].removeClass("hideUp").addClass("showDown");
+        // }
+        // Vue.$refs['login_user_box'].slideToggle("slow");
+        // Vue.$refs['video'].play();
+        // $(".login_user_box").slideToggle("slow");
       },
       // 退出
       logoutHandle () {

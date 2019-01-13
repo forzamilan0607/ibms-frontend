@@ -21,7 +21,7 @@
 }
 .allSummary_box .s_b_two p span.line { border-left:#444 solid 1px; }
 .allSummary_box .s_b_three {
-    height:440px;
+    height:450px;
     padding:0 15px;
 }
 .day_weather {
@@ -54,13 +54,10 @@
 .day_weather_detail dt {
     width:120px;
     height:80px;
-    /*background-color:#101010;*/
     margin-right:1px;
 }
 .day_weather_detail dd {
-    /* width:239px; */
     height:70px;
-    /*background-color:#000;*/
     padding:10px 0 0 10px;
 }
 .day_weather_detail dt h3 {
